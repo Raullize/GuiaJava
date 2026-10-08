@@ -1,24 +1,24 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=header"/>
 
-# 📊 Arrays
+# Arrays
 
-## 🧠 Estruturas de dados fundamentais em Java
+## Estruturas de dados fundamentais em Java
 
 Arrays são estruturas de dados que permitem armazenar múltiplos valores do mesmo tipo em uma única variável. Em Java, os arrays são objetos que contêm elementos do mesmo tipo, organizados em sequência e acessados por índice.
 
-### 📋 Características dos Arrays em Java
+### Características dos Arrays em Java
 
-- 📏 Tamanho fixo (definido na criação)
-- 🔢 Índices começam em 0
-- 🧩 Armazenam elementos do mesmo tipo
-- 🧮 Possuem um atributo `length` que indica seu tamanho
-- 🧠 São objetos em Java, mesmo para tipos primitivos
+- Tamanho fixo (definido na criação)
+- Índices começam em 0
+- Armazenam elementos do mesmo tipo
+- Possuem um atributo `length` que indica seu tamanho
+- São objetos em Java, mesmo para tipos primitivos
 
-### 📝 Declaração e Inicialização de Arrays
+### Declaração e Inicialização de Arrays
 
 Existem várias formas de declarar e inicializar um array em Java:
 
-#### 1️⃣ Declaração simples
+#### 1 Declaração simples
 
 ```java
 // Declaração (apenas cria a referência, não o array)
@@ -26,7 +26,7 @@ int[] numeros;
 String[] nomes;
 ```
 
-#### 2️⃣ Alocação de memória
+#### 2 Alocação de memória
 
 ```java
 // Alocação de memória sem inicializar valores
@@ -34,7 +34,7 @@ numeros = new int[5]; // Cria um array com 5 elementos (valores padrão: 0)
 nomes = new String[3]; // Cria um array com 3 elementos (valores padrão: null)
 ```
 
-#### 3️⃣ Declaração e alocação em uma única linha
+#### 3 Declaração e alocação em uma única linha
 
 ```java
 int[] contador = new int[10];
@@ -42,7 +42,7 @@ double[] precos = new double[100];
 char[] letras = new char[26];
 ```
 
-#### 4️⃣ Inicialização com valores
+#### 4 Inicialização com valores
 
 ```java
 // Inicialização com valores específicos
@@ -51,7 +51,7 @@ String[] frutas = {"Maçã", "Banana", "Laranja"};
 char[] vogais = {'a', 'e', 'i', 'o', 'u'};
 ```
 
-#### 5️⃣ Declaração, alocação e inicialização explícita
+#### 5 Declaração, alocação e inicialização explícita
 
 ```java
 float[] alturas = new float[] {1.75f, 1.80f, 1.65f, 1.90f};
@@ -64,7 +64,7 @@ boolean[] status = new boolean[] {true, false, true};
 > int numeros[]; // Forma alternativa (estilo C)
 > ```
 
-### 🔄 Acessando e Modificando Elementos
+### Acessando e Modificando Elementos
 
 Os elementos de um array são acessados através de seus índices:
 
@@ -80,7 +80,7 @@ numeros[1] = 25; // Altera o segundo elemento para 25
 numeros[4] = 100; // Altera o quinto elemento para 100
 ```
 
-### 📏 Atributo `length`
+### Atributo `length`
 
 Todo array em Java possui um atributo `length` que retorna o seu tamanho:
 
@@ -94,11 +94,11 @@ for (int i = 0; i < numeros.length; i++) {
 }
 ```
 
-### ♻️ Percorrendo Arrays
+### Percorrendo Arrays
 
 Existem diversas formas de percorrer um array em Java:
 
-#### 1️⃣ Loop `for` tradicional
+#### 1 Loop `for` tradicional
 
 ```java
 int[] numeros = {10, 20, 30, 40, 50};
@@ -108,7 +108,7 @@ for (int i = 0; i < numeros.length; i++) {
 }
 ```
 
-#### 2️⃣ Loop `for-each` (Enhanced for)
+#### 2 Loop `for-each` (Enhanced for)
 
 ```java
 int[] numeros = {10, 20, 30, 40, 50};
@@ -118,7 +118,7 @@ for (int numero : numeros) {
 }
 ```
 
-#### 3️⃣ Usando `java.util.Arrays`
+#### 3 Usando `java.util.Arrays`
 
 ```java
 int[] numeros = {10, 20, 30, 40, 50};
@@ -127,7 +127,7 @@ int[] numeros = {10, 20, 30, 40, 50};
 System.out.println(Arrays.toString(numeros));
 ```
 
-### 🛠️ Métodos Úteis da Classe Arrays
+### Métodos Úteis da Classe Arrays
 
 A classe `java.util.Arrays` oferece vários métodos úteis para trabalhar com arrays:
 
@@ -171,7 +171,7 @@ public class ExemploArrays {
 }
 ```
 
-### 🔍 Arrays de Tipos Primitivos vs. Arrays de Objetos
+### Arrays de Tipos Primitivos vs. Arrays de Objetos
 
 Em Java, há diferenças importantes entre arrays de tipos primitivos e arrays de objetos:
 
@@ -207,7 +207,7 @@ pessoas[1] = new Pessoa("Maria", 30);
 pessoas[2] = new Pessoa("Carlos", 22);
 ```
 
-### 📊 Arrays de Strings
+### Arrays de Strings
 
 Arrays de strings são muito comuns em programação Java:
 
@@ -223,7 +223,7 @@ for (String dia : dias) {
 Arrays.sort(dias);
 ```
 
-### 🔄 Convertendo Arrays em String
+### Convertendo Arrays em String
 
 Existem várias formas de converter um array em uma representação de String:
 
@@ -271,7 +271,7 @@ int[] numeros = null;
 int tamanho = numeros.length; // Erro! numeros é null
 ```
 
-### 🔨 Exemplo Prático: Calculando Estatísticas
+### Exemplo Prático: Calculando Estatísticas
 
 ```java
 public class EstatiticasArray {
@@ -316,7 +316,7 @@ public class EstatiticasArray {
 }
 ```
 
-### 💡 Dicas e Boas Práticas
+### Dicas e Boas Práticas
 
 1. **Verificação de limites**: Sempre verifique se o índice está dentro dos limites do array
 2. **Arrays vazios vs. null**: Prefira arrays vazios (`new int[0]`) a arrays null
@@ -327,6 +327,6 @@ public class EstatiticasArray {
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/>

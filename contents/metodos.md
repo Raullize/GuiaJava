@@ -1,14 +1,14 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=header"/>
 
-# 🔄 Métodos
+# Métodos
 
-## 🧩 Criando e utilizando blocos de código reutilizáveis em Java
+## Criando e utilizando blocos de código reutilizáveis em Java
 
 Os métodos são blocos de código que executam tarefas específicas e podem ser reutilizados em diferentes partes do programa. Eles são fundamentais para implementar o princípio "Don't Repeat Yourself" (DRY) e organizar o código de forma modular. Neste guia, aprenderemos a criar e utilizar métodos em Java.
 
-### 📋 Fundamentos de métodos
+### Fundamentos de métodos
 
-#### 🏗️ Anatomia de um método
+#### Anatomia de um método
 
 A estrutura básica de um método em Java é:
 
@@ -32,7 +32,7 @@ Vamos analisar cada parte:
 | Corpo | Bloco de código com as instruções | `{ System.out.println("Olá"); }` |
 | Instrução return | Retorna um valor (se não for void) | `return resultado;` |
 
-#### 🌟 Exemplo de método simples
+#### Exemplo de método simples
 
 ```java
 public class ExemploMetodo {
@@ -53,9 +53,9 @@ public class ExemploMetodo {
 }
 ```
 
-### 🔠 Tipos de métodos
+### Tipos de métodos
 
-#### 📤 Métodos com e sem retorno
+#### Métodos com e sem retorno
 
 **Métodos com retorno** devem especificar o tipo de dado que retornam e incluir uma instrução `return`:
 
@@ -103,7 +103,7 @@ public static void verificarIdade(int idade) {
 }
 ```
 
-#### 🚶 Métodos estáticos vs. métodos de instância
+#### Métodos estáticos vs. métodos de instância
 
 **Métodos estáticos (static)** pertencem à classe, não a instâncias específicas:
 
@@ -148,9 +148,9 @@ pessoa.apresentar(); // Chamada através da instância
 int meses = pessoa.getIdadeEmMeses();
 ```
 
-### 📥 Parâmetros e argumentos
+### Parâmetros e argumentos
 
-#### 🔄 Passagem de parâmetros
+#### Passagem de parâmetros
 
 Em Java, os parâmetros são passados de duas formas, dependendo do tipo:
 
@@ -183,7 +183,7 @@ public class ExemploParametros {
 }
 ```
 
-#### 📦 Tipos de parâmetros
+#### Tipos de parâmetros
 
 **Parâmetros obrigatórios** são declarados normalmente e devem ser fornecidos na chamada:
 
@@ -231,7 +231,7 @@ saudacao("Maria"); // Usa o padrão "Olá"
 saudacao("João", "Bem-vindo"); // Especifica o prefixo
 ```
 
-### 🔄 Sobrecarga de métodos
+### Sobrecarga de métodos
 
 A sobrecarga permite criar múltiplas versões do mesmo método com diferentes parâmetros:
 
@@ -264,7 +264,7 @@ Regras para sobrecarga:
 - Os métodos devem ter diferentes listas de parâmetros (tipo, ordem ou quantidade)
 - O tipo de retorno pode ser diferente, mas isso sozinho não é suficiente para diferenciar os métodos
 
-### 🔁 Recursividade
+### Recursividade
 
 Um método pode chamar a si mesmo, criando um padrão recursivo:
 
@@ -296,7 +296,7 @@ public class Recursividade {
 }
 ```
 
-### 🛡️ Encapsulamento com métodos
+### Encapsulamento com métodos
 
 Os métodos são fundamentais para implementar o encapsulamento, um dos pilares da Programação Orientada a Objetos:
 
@@ -357,9 +357,9 @@ public class ContaBancaria {
 }
 ```
 
-### 🔌 Métodos especiais
+### Métodos especiais
 
-#### ⚙️ Construtores
+#### Construtores
 
 Construtores são métodos especiais para inicializar objetos:
 
@@ -387,7 +387,7 @@ public class Produto {
 }
 ```
 
-#### 🔢 Métodos toString(), equals() e hashCode()
+#### Métodos toString(), equals() e hashCode()
 
 Estes métodos são herdados da classe Object e geralmente são sobrescritos:
 
@@ -426,9 +426,9 @@ public class Pessoa {
 }
 ```
 
-### 🌐 Escopo e visibilidade
+### Escopo e visibilidade
 
-#### 📊 Modificadores de acesso
+#### Modificadores de acesso
 
 Java tem quatro níveis de acesso para métodos e atributos:
 
@@ -463,7 +463,7 @@ public class ExemploModificadores {
 }
 ```
 
-#### 🌍 Outros modificadores
+#### Outros modificadores
 
 Além dos modificadores de acesso, podemos usar:
 
@@ -498,9 +498,9 @@ abstract class ClasseAbstrata {
 }
 ```
 
-### 🧠 Boas práticas e padrões
+### Boas práticas e padrões
 
-#### 🔤 Convenções de nomenclatura
+#### Convenções de nomenclatura
 
 - Use verbos para nomes de métodos (ação)
 - Use camelCase (primeira letra minúscula, demais palavras com inicial maiúscula)
@@ -519,7 +519,7 @@ CALCULAR_TOTAL()  // errado para métodos
 Processar()  // primeira letra deveria ser minúscula
 ```
 
-#### 📏 Princípio da responsabilidade única
+#### Princípio da responsabilidade única
 
 Cada método deve fazer apenas uma coisa e fazê-la bem:
 
@@ -576,7 +576,7 @@ private void enviarConfirmacao(Pedido pedido) {
 }
 ```
 
-#### 🛡️ Validação de parâmetros
+#### Validação de parâmetros
 
 Sempre valide entradas para evitar comportamentos inesperados:
 
@@ -601,7 +601,7 @@ public void transferir(ContaBancaria destino, double valor) {
 }
 ```
 
-#### ⚡ Otimizando métodos
+#### Otimizando métodos
 
 ```java
 // Evite criar objetos desnecessários dentro de loops
@@ -630,9 +630,9 @@ public int calcularFibonacci(int n) {
 }
 ```
 
-### 📚 Exemplos práticos
+### Exemplos práticos
 
-#### 🧮 Calculadora simples
+#### Calculadora simples
 
 ```java
 public class Calculadora {
@@ -668,7 +668,7 @@ public class Calculadora {
 }
 ```
 
-#### 🧵 Manipulador de strings
+#### Manipulador de strings
 
 ```java
 public class ManipuladorString {
@@ -724,7 +724,7 @@ public class ManipuladorString {
 }
 ```
 
-#### 🧪 Utilitário de validação
+#### Utilitário de validação
 
 ```java
 public class Validador {
@@ -777,7 +777,7 @@ public class Validador {
 }
 ```
 
-### 📋 Checklist de boas práticas
+### Checklist de boas práticas
 
 ✅ **Coesão**: Cada método faz apenas uma coisa  
 ✅ **Nomeação**: Nomes claros e descritivos  
@@ -792,6 +792,6 @@ public class Validador {
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/>

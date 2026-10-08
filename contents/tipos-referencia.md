@@ -1,12 +1,12 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=header"/>
 
-# 🧩 Tipos de referência
+# Tipos de referência
 
-## 🔍 Entendendo as estruturas complexas em Java
+## Entendendo as estruturas complexas em Java
 
 Além dos tipos primitivos, Java oferece tipos de referência que permitem criar estruturas mais complexas e representar conceitos do mundo real. Este guia explorará os principais tipos de referência em Java e como utilizá-los.
 
-### 📦 O que são tipos de referência?
+### O que são tipos de referência?
 
 Em Java, existem dois grandes grupos de tipos de dados:
 
@@ -23,7 +23,7 @@ int numero = 42;
 String texto = "Olá, mundo!";
 ```
 
-### 📚 Classes e Objetos
+### Classes e Objetos
 
 As classes são os tipos de referência mais comuns em Java. Uma classe é um modelo para criar objetos.
 
@@ -53,7 +53,7 @@ Pessoa pessoa2 = new Pessoa("Ana", 30);
 pessoa1.apresentar(); // Saída: Olá, eu sou Carlos e tenho 25 anos.
 ```
 
-#### 🧠 Comportamento de referência
+#### Comportamento de referência
 
 Como as variáveis de objeto armazenam referências, duas variáveis podem apontar para o mesmo objeto:
 
@@ -65,7 +65,7 @@ p2.setIdade(41); // Mudando o objeto através de p2
 System.out.println(p1.getIdade()); // Saída: 41 (o objeto foi alterado)
 ```
 
-### 🔄 A classe String
+### A classe String
 
 `String` é um tipo de referência especial que representa sequências de caracteres. Strings em Java são imutáveis.
 
@@ -77,7 +77,7 @@ String mensagem = saudacao + ", " + nome + "!"; // Concatenação
 System.out.println(mensagem); // Saída: Olá, Maria!
 ```
 
-#### 🔤 Métodos importantes da classe String
+#### Métodos importantes da classe String
 
 | Método | Descrição | Exemplo |
 |--------|-----------|---------|
@@ -93,7 +93,7 @@ System.out.println(mensagem); // Saída: Olá, Maria!
 | `contains(CharSequence s)` | Verifica se contém uma sequência | `"Java".contains("av")` → true |
 | `split(String regex)` | Divide a string com base em um delimitador | `"a,b,c".split(",")` → ["a", "b", "c"] |
 
-### 🧰 Wrappers (Classes Invólucro)
+### Wrappers (Classes Invólucro)
 
 Para cada tipo primitivo, Java fornece uma classe wrapper correspondente:
 
@@ -129,7 +129,7 @@ Integer num = 100; // int → Integer automaticamente
 int valor = num; // Integer → int automaticamente
 ```
 
-### 📊 Arrays em Java
+### Arrays em Java
 
 Arrays são tipos de referência que armazenam múltiplos valores do mesmo tipo:
 
@@ -154,7 +154,7 @@ pessoas[1] = new Pessoa("Bruno", 30);
 pessoas[2] = new Pessoa("Carlos", 35);
 ```
 
-### 🌟 Enumerações (Enum)
+### Enumerações (Enum)
 
 Enums são tipos especiais de classes que representam conjuntos fixos de constantes:
 
@@ -208,7 +208,7 @@ Estacao estacao = Estacao.VERAO;
 System.out.println(estacao.getTemperatura()); // Saída: Quente
 ```
 
-### 🧾 Interface e Classes Abstratas
+### Interface e Classes Abstratas
 
 Interfaces e classes abstratas são tipos de referência usados para definir contratos e hierarquias de classes:
 
@@ -266,7 +266,7 @@ public class Carro extends Veiculo {
 }
 ```
 
-### 📋 Coleções
+### Coleções
 
 Java oferece várias classes de coleção para armazenar e manipular grupos de objetos de maneira mais flexível que arrays:
 
@@ -344,7 +344,7 @@ for (Map.Entry<String, Integer> entrada : idades.entrySet()) {
 }
 ```
 
-### 📈 Diferenças importantes entre tipos primitivos e de referência
+### Diferenças importantes entre tipos primitivos e de referência
 
 | Característica | Tipos Primitivos | Tipos de Referência |
 |----------------|-----------------|---------------------|
@@ -356,7 +356,7 @@ for (Map.Entry<String, Integer> entrada : idades.entrySet()) {
 | Herança | Não se aplicam conceitos de OO | Suportam herança |
 | Performance | Geralmente mais eficientes | Geralmente mais recursos |
 
-### 🔍 Operador instanceof
+### Operador instanceof
 
 Para verificar se um objeto é instância de uma classe específica:
 
@@ -369,7 +369,7 @@ if (obj instanceof String) {
 }
 ```
 
-### 💾 Comparação == vs equals()
+### Comparação == vs equals()
 
 - `==` compara referências (se apontam para o mesmo objeto)
 - `equals()` compara conteúdo (implementado pelas classes)
@@ -382,7 +382,7 @@ System.out.println(a == b);      // false (referências diferentes)
 System.out.println(a.equals(b)); // true (conteúdo igual)
 ```
 
-### 🗑️ Garbage Collection
+### Garbage Collection
 
 Java gerencia automaticamente a memória através do Garbage Collector:
 
@@ -405,7 +405,7 @@ public void metodo() {
 }
 ```
 
-### 🚀 Dicas práticas
+### Dicas práticas
 
 1. **Use tipos de referência para modelar entidades do mundo real**
 2. **Prefira tipos primitivos para valores simples (por eficiência)**
@@ -416,6 +416,6 @@ public void metodo() {
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/>

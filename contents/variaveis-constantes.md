@@ -1,12 +1,12 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=header"/>
 
-# 🔢 Variáveis e Constantes
+# Variáveis e Constantes
 
-## 🧰 Armazenando e manipulando dados em Java
+## Armazenando e manipulando dados em Java
 
 As variáveis e constantes são fundamentais em qualquer linguagem de programação, pois permitem armazenar e manipular dados durante a execução do programa. Em Java, elas seguem regras específicas que precisamos entender.
 
-### 📦 O que são Variáveis?
+### O que são Variáveis?
 
 Variáveis são espaços na memória que armazenam valores que podem ser alterados durante a execução do programa. Em Java, toda variável precisa:
 
@@ -14,7 +14,7 @@ Variáveis são espaços na memória que armazenam valores que podem ser alterad
 2. Ter um nome (identificador)
 3. Ser declarada antes de ser usada
 
-#### 📝 Sintaxe para Declaração de Variáveis
+#### Sintaxe para Declaração de Variáveis
 
 ```java
 tipo nomeVariavel;  // Declaração
@@ -24,7 +24,7 @@ nomeVariavel = valor;  // Atribuição
 tipo nomeVariavel = valor;  // Declaração e atribuição
 ```
 
-#### 🔍 Exemplos:
+#### Exemplos:
 
 ```java
 // Declarações simples
@@ -42,7 +42,7 @@ int x, y, z;
 double largura = 10.5, altura = 20.8;
 ```
 
-### 🏷️ Regras para Nomes de Variáveis
+### Regras para Nomes de Variáveis
 
 Em Java, os nomes de variáveis devem seguir algumas regras:
 
@@ -57,7 +57,7 @@ Em Java, os nomes de variáveis devem seguir algumas regras:
 - Usar palavras reservadas do Java (como `if`, `class`, `for`)
 - Conter espaços ou caracteres especiais
 
-#### 🌟 Convenções de Nomenclatura
+#### Convenções de Nomenclatura
 
 Em Java, seguimos a convenção camelCase para variáveis:
 
@@ -68,7 +68,7 @@ String nomeDoProduto;
 boolean estaAtivo;
 ```
 
-### 📊 Escopo de Variáveis
+### Escopo de Variáveis
 
 O escopo define onde uma variável pode ser acessada:
 
@@ -143,7 +143,7 @@ public class Contador {
 }
 ```
 
-### 🔒 Constantes em Java
+### Constantes em Java
 
 Constantes são valores que não podem ser alterados após a atribuição inicial. Em Java, usamos a palavra-chave `final` para declarar constantes:
 
@@ -174,7 +174,7 @@ public class Matematica {
 }
 ```
 
-### 💡 Uso de Separadores de Dígitos (_)
+### Uso de Separadores de Dígitos (_)
 
 Para melhorar a legibilidade de valores numéricos longos, Java permite o uso de sublinhados como separadores de dígitos:
 
@@ -189,7 +189,7 @@ Regras para uso do separador `_`:
 - Não pode estar junto a um ponto decimal
 - Não pode estar antes dos sufixos como L, F ou D
 
-### 🔄 Tipos de Inicialização de Variáveis
+### Tipos de Inicialização de Variáveis
 
 #### 1. Inicialização Explícita
 
@@ -232,7 +232,7 @@ public class Exemplo {
 }
 ```
 
-### 🔨 Exemplo Prático
+### Exemplo Prático
 
 Vamos ver um exemplo completo de uso de variáveis e constantes:
 
@@ -289,7 +289,7 @@ public class ContaBancaria {
 }
 ```
 
-### 🌟 Dicas e Boas Práticas
+### Dicas e Boas Práticas
 
 1. **Escopo limitado**: Mantenha o escopo das variáveis o mais limitado possível
 2. **Inicialização**: Sempre inicialize variáveis antes de usá-las
@@ -300,6 +300,6 @@ public class ContaBancaria {
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/>

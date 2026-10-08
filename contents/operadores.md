@@ -2,11 +2,11 @@
 
 # ➗ Operadores
 
-## 🔧 Manipulando dados com expressões em Java
+## Manipulando dados com expressões em Java
 
 Os operadores são símbolos especiais que realizam operações específicas em um, dois ou três operandos e retornam um resultado. Java possui uma rica variedade de operadores que permitem realizar desde cálculos matemáticos simples até operações lógicas complexas.
 
-### 📊 Tipos de Operadores em Java
+### Tipos de Operadores em Java
 
 Java agrupa seus operadores nas seguintes categorias:
 
@@ -31,7 +31,7 @@ Usados para realizar operações matemáticas básicas:
 | `/` | Divisão | `int quociente = 10 / 2;` // 5 |
 | `%` | Módulo (resto) | `int resto = 10 % 3;` // 1 |
 
-#### 🔢 Exemplo de operações aritméticas:
+#### Exemplo de operações aritméticas:
 
 ```java
 public class ExemploOperacoesAritmeticas {
@@ -65,7 +65,7 @@ double resultadoInteiro = x / y;        // 3.0 (divisão inteira, depois convert
 double resultadoExato = (double) x / y; // 3.3333333333333335 (casting para divisão de ponto flutuante)
 ```
 
-### 📝 Operadores de Atribuição
+### Operadores de Atribuição
 
 Usados para atribuir valores a variáveis:
 
@@ -84,7 +84,7 @@ Usados para atribuir valores a variáveis:
 | `>>=` | Atribuição com deslocamento à direita | `x >>= 2;` | `x = x >> 2;` |
 | `>>>=` | Atribuição com deslocamento à direita sem sinal | `x >>>= 2;` | `x = x >>> 2;` |
 
-#### 🔍 Exemplo de operadores de atribuição:
+#### Exemplo de operadores de atribuição:
 
 ```java
 public class ExemploOperadoresAtribuicao {
@@ -109,7 +109,7 @@ public class ExemploOperadoresAtribuicao {
 }
 ```
 
-### 🔍 Operadores de Comparação (Relacionais)
+### Operadores de Comparação (Relacionais)
 
 Usados para comparar valores e retornar um resultado booleano (`true` ou `false`):
 
@@ -122,7 +122,7 @@ Usados para comparar valores e retornar um resultado booleano (`true` ou `false`
 | `>=` | Maior ou igual a | `a >= b` |
 | `<=` | Menor ou igual a | `a <= b` |
 
-#### 🔍 Exemplo de operadores de comparação:
+#### Exemplo de operadores de comparação:
 
 ```java
 public class ExemploOperadoresComparacao {
@@ -156,7 +156,7 @@ System.out.println(s1 == s3);       // false (referências diferentes)
 System.out.println(s1.equals(s3));  // true (mesmo conteúdo)
 ```
 
-### 🔀 Operadores Lógicos
+### Operadores Lógicos
 
 Usados para combinar expressões booleanas:
 
@@ -166,7 +166,7 @@ Usados para combinar expressões booleanas:
 | `\|\|` | OR lógico | `a \|\| b` |
 | `!` | NOT lógico | `!a` |
 
-#### 🔍 Exemplo de operadores lógicos:
+#### Exemplo de operadores lógicos:
 
 ```java
 public class ExemploOperadoresLogicos {
@@ -194,7 +194,7 @@ public class ExemploOperadoresLogicos {
 }
 ```
 
-#### 📝 Avaliação de curto-circuito (short-circuit evaluation):
+#### Avaliação de curto-circuito (short-circuit evaluation):
 
 - `&&`: Se o primeiro operando for `false`, o segundo não é avaliado
 - `||`: Se o primeiro operando for `true`, o segundo não é avaliado
@@ -207,7 +207,7 @@ if (n > 5 && n++ < 20) {
 }
 ```
 
-### 🔄 Operadores Bit a Bit (Bitwise)
+### Operadores Bit a Bit (Bitwise)
 
 Manipulam bits individuais de valores inteiros:
 
@@ -221,7 +221,7 @@ Manipulam bits individuais de valores inteiros:
 | `>>` | Deslocamento à direita | `a >> n` |
 | `>>>` | Deslocamento à direita sem sinal | `a >>> n` |
 
-#### 🔍 Exemplo de operadores bit a bit:
+#### Exemplo de operadores bit a bit:
 
 ```java
 public class ExemploOperadoresBitwise {
@@ -282,7 +282,7 @@ public class ExemploOperadoresUnarios {
 }
 ```
 
-### 🔀 Operador Ternário
+### Operador Ternário
 
 Um operador condicional que funciona como um if-else simplificado:
 
@@ -290,7 +290,7 @@ Um operador condicional que funciona como um if-else simplificado:
 resultado = (condição) ? valorSeVerdadeiro : valorSeFalso;
 ```
 
-#### 🔍 Exemplo de operador ternário:
+#### Exemplo de operador ternário:
 
 ```java
 public class ExemploOperadorTernario {
@@ -310,7 +310,7 @@ public class ExemploOperadorTernario {
 }
 ```
 
-### 🧐 Operador instanceof
+### Operador instanceof
 
 Verifica se um objeto é instância de um tipo específico:
 
@@ -331,28 +331,28 @@ public class ExemploInstanceOf {
 }
 ```
 
-### 📊 Precedência de Operadores
+### Precedência de Operadores
 
 Os operadores em Java seguem uma ordem de precedência:
 
 | Prioridade | Operadores | Descrição |
 |------------|------------|-----------|
-| 1 (maior)  | `()`, `[]`, `.` | Parênteses, colchetes, acesso a membros |
-| 2          | `++`, `--`, `+` (unário), `-` (unário), `!`, `~` | Operadores unários |
-| 3          | `*`, `/`, `%` | Multiplicação, divisão, módulo |
-| 4          | `+`, `-` | Adição, subtração |
-| 5          | `<<`, `>>`, `>>>` | Operadores de deslocamento |
-| 6          | `<`, `<=`, `>`, `>=`, `instanceof` | Operadores relacionais |
-| 7          | `==`, `!=` | Operadores de igualdade |
-| 8          | `&` | AND bit a bit |
-| 9          | `^` | XOR bit a bit |
-| 10         | `\|` | OR bit a bit |
-| 11         | `&&` | AND lógico |
-| 12         | `\|\|` | OR lógico |
-| 13         | `? :` | Operador ternário |
+| 1 (maior) | `()`, `[]`, `.` | Parênteses, colchetes, acesso a membros |
+| 2 | `++`, `--`, `+` (unário), `-` (unário), `!`, `~` | Operadores unários |
+| 3 | `*`, `/`, `%` | Multiplicação, divisão, módulo |
+| 4 | `+`, `-` | Adição, subtração |
+| 5 | `<<`, `>>`, `>>>` | Operadores de deslocamento |
+| 6 | `<`, `<=`, `>`, `>=`, `instanceof` | Operadores relacionais |
+| 7 | `==`, `!=` | Operadores de igualdade |
+| 8 | `&` | AND bit a bit |
+| 9 | `^` | XOR bit a bit |
+| 10 | `\|` | OR bit a bit |
+| 11 | `&&` | AND lógico |
+| 12 | `\|\|` | OR lógico |
+| 13 | `? :` | Operador ternário |
 | 14 (menor) | `=`, `+=`, `-=`, etc. | Operadores de atribuição |
 
-#### 🔍 Exemplo de precedência:
+#### Exemplo de precedência:
 
 ```java
 public class ExemploPrecedencia {
@@ -372,7 +372,7 @@ public class ExemploPrecedencia {
 }
 ```
 
-### 🔄 Conversões (Casting)
+### Conversões (Casting)
 
 Ao usar operadores com tipos diferentes, Java pode realizar conversões automáticas (promoção) ou exigir conversões explícitas (casting):
 
@@ -390,7 +390,7 @@ double numeroDouble = 10.5;
 int numeroInteiro = (int) numeroDouble;  // Conversão explícita (casting) de double para int, resulta em 10
 ```
 
-#### 🔍 Exemplo de conversões em operações:
+#### Exemplo de conversões em operações:
 
 ```java
 public class ExemploCasting {
@@ -417,7 +417,7 @@ public class ExemploCasting {
 }
 ```
 
-### 💡 Dicas e Boas Práticas
+### Dicas e Boas Práticas
 
 1. **Legibilidade**: Use parênteses para tornar a precedência explícita, mesmo quando não estritamente necessário
 2. **Comparação de ponto flutuante**: Evite compará-los diretamente com `==` devido a imprecisões; use uma margem de erro
@@ -435,6 +435,6 @@ if (objeto != null && objeto.metodo()) {
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/>

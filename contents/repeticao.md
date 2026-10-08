@@ -1,16 +1,16 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=header"/>
 
-# ♻️ Estruturas de Repetição
+# Estruturas de Repetição
 
-## 🔄 Mecanismos para executar código repetidamente em Java
+## Mecanismos para executar código repetidamente em Java
 
 As estruturas de repetição (ou loops) são recursos fundamentais em programação que permitem executar um bloco de código várias vezes. Java oferece diversas formas de implementar repetições, cada uma com suas características e casos de uso ideais.
 
-### 🔁 Loop `for`
+### Loop `for`
 
 O loop `for` é ideal quando sabemos exatamente quantas vezes queremos executar um bloco de código.
 
-#### 📝 Sintaxe:
+#### Sintaxe:
 
 ```java
 for (inicialização; condição; incremento/decremento) {
@@ -22,7 +22,7 @@ for (inicialização; condição; incremento/decremento) {
 - **Condição**: Verificada antes de cada iteração; o loop continua enquanto for verdadeira
 - **Incremento/Decremento**: Executado após cada iteração
 
-#### 🔍 Exemplos:
+#### Exemplos:
 
 ```java
 // Loop básico de 0 a 9
@@ -41,7 +41,7 @@ for (int i = 0; i <= 20; i += 2) {
 }
 ```
 
-#### 🧮 Loop `for` com múltiplas variáveis:
+#### Loop `for` com múltiplas variáveis:
 
 ```java
 // Usando múltiplas variáveis no loop for
@@ -50,11 +50,11 @@ for (int i = 0, j = 10; i < j; i++, j--) {
 }
 ```
 
-### 🔄 Loop `for-each` (Enhanced for)
+### Loop `for-each` (Enhanced for)
 
 O loop `for-each` é uma versão simplificada do `for` tradicional, útil para percorrer elementos em coleções e arrays sem a necessidade de gerenciar índices.
 
-#### 📝 Sintaxe:
+#### Sintaxe:
 
 ```java
 for (tipo elemento : coleção) {
@@ -62,7 +62,7 @@ for (tipo elemento : coleção) {
 }
 ```
 
-#### 🔍 Exemplos:
+#### Exemplos:
 
 ```java
 // Percorrendo um array com for-each
@@ -88,11 +88,11 @@ for (String fruta : frutas) {
 - Não permite percorrer a coleção em ordem inversa
 - Não permite percorrer múltiplas coleções simultaneamente
 
-### 🔁 Loop `while`
+### Loop `while`
 
 O loop `while` executa um bloco de código enquanto uma condição específica for verdadeira.
 
-#### 📝 Sintaxe:
+#### Sintaxe:
 
 ```java
 while (condição) {
@@ -100,7 +100,7 @@ while (condição) {
 }
 ```
 
-#### 🔍 Exemplos:
+#### Exemplos:
 
 ```java
 // Loop simples
@@ -121,11 +121,11 @@ while (!entrada.equalsIgnoreCase("sair")) {
 scanner.close();
 ```
 
-### 🔄 Loop `do-while`
+### Loop `do-while`
 
 O loop `do-while` é semelhante ao `while`, mas garante que o bloco de código será executado pelo menos uma vez, pois a condição é verificada após a primeira execução.
 
-#### 📝 Sintaxe:
+#### Sintaxe:
 
 ```java
 do {
@@ -133,7 +133,7 @@ do {
 } while (condição);
 ```
 
-#### 🔍 Exemplos:
+#### Exemplos:
 
 ```java
 // Exemplo básico
@@ -155,7 +155,7 @@ System.out.println("Você digitou: " + numero);
 scanner.close();
 ```
 
-### 📊 Comparação entre as Estruturas de Repetição
+### Comparação entre as Estruturas de Repetição
 
 | Estrutura | Quando usar | Execução garantida | Verificação da condição |
 |-----------|-------------|-------------------|------------------------|
@@ -164,11 +164,11 @@ scanner.close();
 | `while`   | Quando não se sabe o número de iterações | Não | Antes de cada iteração |
 | `do-while`| Quando o bloco deve ser executado pelo menos uma vez | Sim, pelo menos uma vez | Após cada iteração |
 
-### 🚀 Controle de Fluxo em Loops
+### Controle de Fluxo em Loops
 
 Java oferece instruções para controle adicional dentro dos loops:
 
-#### 🛑 `break`
+#### `break`
 
 A instrução `break` termina imediatamente o loop, independentemente da condição.
 
@@ -192,7 +192,7 @@ while (true) {  // Loop infinito
 }
 ```
 
-#### ⏭️ `continue`
+#### `continue`
 
 A instrução `continue` pula para a próxima iteração do loop, ignorando o código restante na iteração atual.
 
@@ -215,7 +215,7 @@ for (String palavra : palavras) {
 }
 ```
 
-### 🧮 Loops Aninhados
+### Loops Aninhados
 
 Loops podem ser aninhados, ou seja, um loop dentro de outro, permitindo iterações mais complexas.
 
@@ -243,11 +243,11 @@ for (int i = 0; i < matriz.length; i++) {
 }
 ```
 
-### 📚 Loops em Coleções
+### Loops em Coleções
 
 Java oferece várias formas de percorrer coleções:
 
-#### 1️⃣ Usando Iterator
+#### 1 Usando Iterator
 
 ```java
 import java.util.ArrayList;
@@ -275,7 +275,7 @@ public class ExemploIterator {
 }
 ```
 
-#### 2️⃣ Usando Streams (Java 8+)
+#### 2 Usando Streams (Java 8+)
 
 ```java
 import java.util.ArrayList;
@@ -351,9 +351,9 @@ for (int i = 0; i < tamanho; i++) {
 }
 ```
 
-### 🌟 Exemplos Práticos
+### Exemplos Práticos
 
-#### 1️⃣ Cálculo de Fatorial
+#### 1 Cálculo de Fatorial
 
 ```java
 public class Fatorial {
@@ -370,7 +370,7 @@ public class Fatorial {
 }
 ```
 
-#### 2️⃣ Sequência de Fibonacci
+#### 2 Sequência de Fibonacci
 
 ```java
 public class Fibonacci {
@@ -391,7 +391,7 @@ public class Fibonacci {
 }
 ```
 
-#### 3️⃣ Verificação de Número Primo
+#### 3 Verificação de Número Primo
 
 ```java
 public class VerificacaoPrimo {
@@ -419,7 +419,7 @@ public class VerificacaoPrimo {
 }
 ```
 
-### 🧠 Dicas para Escolher a Estrutura Correta
+### Dicas para Escolher a Estrutura Correta
 
 1. Use `for` quando souber o número de iterações antecipadamente
 2. Use `for-each` para percorrer coleções ou arrays de forma simples
@@ -430,6 +430,6 @@ public class VerificacaoPrimo {
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/>

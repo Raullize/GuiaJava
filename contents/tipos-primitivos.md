@@ -1,14 +1,14 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=header"/>
 
-# 📝 Tipos de Dados Primitivos
+# Tipos de Dados Primitivos
 
-## 🧱 Os blocos fundamentais de construção em Java
+## Os blocos fundamentais de construção em Java
 
 Em Java, temos dois tipos principais de dados: **primitivos** e **referência**. Neste artigo, vamos focar nos tipos primitivos, que são os blocos básicos de construção da linguagem.
 
 Java possui 8 tipos primitivos, divididos em 4 categorias:
 
-### 🔢 Tipos Inteiros
+### Tipos Inteiros
 
 | Tipo | Tamanho | Faixa de valores | Exemplo |
 |------|---------|------------------|---------|
@@ -19,7 +19,7 @@ Java possui 8 tipos primitivos, divididos em 4 categorias:
 
 > ⚠️ **Observação**: Para valores `long`, é necessário adicionar o sufixo `L` para números literais maiores que o limite do `int`.
 
-### 💯 Tipos de Ponto Flutuante
+### Tipos de Ponto Flutuante
 
 | Tipo | Tamanho | Precisão | Exemplo |
 |------|---------|----------|---------|
@@ -28,7 +28,7 @@ Java possui 8 tipos primitivos, divididos em 4 categorias:
 
 > ⚠️ **Observação**: Para valores `float`, é necessário adicionar o sufixo `f` para números literais.
 
-### 🔤 Caractere
+### Caractere
 
 | Tipo | Tamanho | Descrição | Exemplo |
 |------|---------|-----------|---------|
@@ -40,7 +40,7 @@ Java possui 8 tipos primitivos, divididos em 4 categorias:
 |------|---------|---------|---------|
 | `boolean` | 1 bit | `true` ou `false` | `boolean ativo = true;` |
 
-## 🎯 Valores Padrão
+## Valores Padrão
 
 Quando declarados como variáveis de instância (campos de classe), os tipos primitivos possuem valores padrão:
 
@@ -70,7 +70,7 @@ public class ValoresPadrao {
 
 > ⚠️ **Observação**: Variáveis locais (declaradas dentro de métodos) não recebem valores padrão e precisam ser inicializadas antes do uso.
 
-## 💡 Uso do Separador de Dígitos (_)
+## Uso do Separador de Dígitos (_)
 
 Java permite o uso do caractere sublinhado (`_`) como separador de dígitos para aumentar a legibilidade de números:
 
@@ -85,7 +85,7 @@ O separador `_` pode ser colocado entre quaisquer dígitos, mas não pode:
 - Estar junto ao ponto decimal
 - Estar antes do sufixo `L`, `F` ou `D`
 
-## 🔄 Conversões entre Tipos Primitivos
+## Conversões entre Tipos Primitivos
 
 Java permite dois tipos de conversão entre tipos primitivos:
 
@@ -117,7 +117,7 @@ int i = (int) d;    // Conversão explícita de double para int (i = 100)
 byte b = (byte) i;  // Conversão explícita de int para byte
 ```
 
-## 🔨 Exemplo Prático
+## Exemplo Prático
 
 Vamos ver um exemplo de como usar os diferentes tipos primitivos em um programa real:
 
@@ -149,7 +149,7 @@ public class CalculadoraIMC {
 }
 ```
 
-## 🧠 Curiosidades e Boas Práticas
+## Curiosidades e Boas Práticas
 
 1. **Escolha do tipo correto**: Use o tipo mais apropriado para cada situação:
    - `int` para a maioria dos números inteiros
@@ -159,7 +159,7 @@ public class CalculadoraIMC {
 2. **Cuidado com overflow**: Quando um valor excede a capacidade do tipo:
    ```java
    byte b = 127;
-   b++;  // b se torna -128 (overflow)
+   b++; // b se torna -128 (overflow)
    ```
 
 3. **Precisão de ponto flutuante**: `float` e `double` podem ter problemas de precisão para operações financeiras. Use `BigDecimal` para cálculos monetários:
@@ -173,6 +173,6 @@ public class CalculadoraIMC {
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/>

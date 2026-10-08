@@ -1,16 +1,16 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=header"/>
 
-# 📄 Criando seu primeiro programa Java
+# Criando seu primeiro programa Java
 
-## 🚀 Dando os primeiros passos na programação Java
+## Dando os primeiros passos na programação Java
 
 Este guia irá ajudá-lo a criar, compilar e executar seu primeiro programa em Java, começando do zero e explicando cada passo do processo.
 
-### 📝 O tradicional "Hello, World!"
+### O tradicional "Hello, World!"
 
 Tradicionalmente, o primeiro programa que se aprende em qualquer linguagem de programação é o "Hello, World!" - um programa simples que exibe a mensagem "Olá, Mundo!" na tela.
 
-#### ✏️ Criando o arquivo de código fonte
+#### Criando o arquivo de código fonte
 
 1. **Abra seu editor de texto ou IDE preferido**
 2. **Crie um novo arquivo chamado `HelloWorld.java`**
@@ -24,7 +24,7 @@ public class HelloWorld {
 }
 ```
 
-#### 📋 Entendendo o código
+#### Entendendo o código
 
 Vamos analisar linha por linha o que este código faz:
 
@@ -36,9 +36,9 @@ Vamos analisar linha por linha o que este código faz:
 | `}` | Fecha o bloco do método main. |
 | `}` | Fecha o bloco da classe HelloWorld. |
 
-### 🔄 Compilando e executando o programa
+### Compilando e executando o programa
 
-#### 🔨 Utilizando o prompt de comando (sem IDE)
+#### Utilizando o prompt de comando (sem IDE)
 
 1. **Abra o terminal ou prompt de comando**
 2. **Navegue até o diretório onde você salvou o arquivo HelloWorld.java:**
@@ -51,7 +51,7 @@ Vamos analisar linha por linha o que este código faz:
    ```
    - Este comando cria um arquivo `HelloWorld.class` que contém o bytecode Java
    - Se não aparecer nenhuma mensagem, a compilação foi bem-sucedida
-   
+  
 4. **Execute o programa com o comando java:**
    ```bash
    java HelloWorld
@@ -62,7 +62,7 @@ Vamos analisar linha por linha o que este código faz:
    Olá, Mundo!
    ```
 
-#### 🧩 Utilizando uma IDE
+#### Utilizando uma IDE
 
 **No IntelliJ IDEA:**
 1. Abra o IntelliJ IDEA
@@ -70,7 +70,7 @@ Vamos analisar linha por linha o que este código faz:
 3. Clique com o botão direito no diretório src > New > Java Class
 4. Nomeie a classe como "HelloWorld"
 5. Adicione o método main e o código System.out.println
-6. Clique no botão de execução (ícone ▶️) ou use o atalho Shift+F10
+6. Clique no botão de execução (ícone ▶) ou use o atalho Shift+F10
 
 **No Eclipse:**
 1. Abra o Eclipse
@@ -86,16 +86,16 @@ Vamos analisar linha por linha o que este código faz:
 3. Digite o código completo
 4. Com a extensão Java instalada, clique no botão "Run" acima do método main ou use o atalho F5
 
-### 🧠 Conceitos fundamentais
+### Conceitos fundamentais
 
-#### 📦 Classes em Java
+#### Classes em Java
 
 Em Java, tudo está contido em classes. Uma classe é uma estrutura que encapsula dados (atributos) e comportamentos (métodos). No nosso exemplo:
 
 - A classe `HelloWorld` é apenas um contêiner para o método `main`
 - Em programas reais, classes representam objetos ou conceitos do mundo real
 
-#### 🎯 Método main
+#### Método main
 
 O método `main` é especial em Java:
 
@@ -106,7 +106,7 @@ O método `main` é especial em Java:
 - `void`: não retorna valor
 - `String[] args`: aceita argumentos da linha de comando como um array de strings
 
-#### 🖨️ System.out.println
+#### System.out.println
 
 Este método é usado para exibir informações no console:
 
@@ -114,11 +114,11 @@ Este método é usado para exibir informações no console:
 - `out`: é um objeto de saída padrão (standard output)
 - `println`: é um método que imprime texto e adiciona uma nova linha ao final
 
-### 🔄 Modificando seu programa
+### Modificando seu programa
 
 Vamos experimentar algumas modificações para aprender mais:
 
-#### 📊 Usando variáveis
+#### Usando variáveis
 
 ```java
 public class HelloWorld {
@@ -132,7 +132,7 @@ public class HelloWorld {
 }
 ```
 
-#### 🧮 Realizando operações simples
+#### Realizando operações simples
 
 ```java
 public class HelloWorld {
@@ -146,7 +146,7 @@ public class HelloWorld {
 }
 ```
 
-#### 📥 Aceitando entrada do usuário
+#### Aceitando entrada do usuário
 
 Para este exemplo, precisamos usar a classe Scanner:
 
@@ -177,7 +177,7 @@ public class HelloWorld {
 | `error: cannot find symbol` | Tentativa de usar uma variável não declarada | Declare a variável antes de usá-la |
 | `error: incompatible types` | Tentativa de atribuir um valor de tipo incompatível | Use o tipo correto ou faça uma conversão adequada |
 
-### 🚀 Próximos passos
+### Próximos passos
 
 Agora que você já criou seu primeiro programa Java, aqui estão algumas sugestões do que explorar em seguida:
 
@@ -187,7 +187,7 @@ Agora que você já criou seu primeiro programa Java, aqui estão algumas sugest
 4. **Explore loops** (for, while, do-while)
 5. **Crie outros métodos além do main** e chame-os
 
-### 💡 Dicas úteis
+### Dicas úteis
 
 - **Indentação e formatação**: Mantenha seu código organizado e bem indentado para facilitar a leitura
 - **Nomes significativos**: Use nomes claros para variáveis e métodos que indiquem sua finalidade
@@ -195,12 +195,12 @@ Agora que você já criou seu primeiro programa Java, aqui estão algumas sugest
 - **Compilar com frequência**: Compile e teste seu código frequentemente para identificar erros cedo
 - **Aprenda com os erros**: Os erros de compilação são úteis; leia as mensagens com atenção
 
-### 🎉 Parabéns!
+### Parabéns!
 
 Você acaba de dar o primeiro passo na sua jornada de programação Java! Continue praticando e explorando os conceitos apresentados neste guia.
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/>

@@ -1,16 +1,16 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=header"/>
 
-# 🔄 Como Java Funciona?
+# Como Java Funciona?
 
-## 📋 Arquitetura e Funcionamento do Java
+## Arquitetura e Funcionamento do Java
 
 Uma das características que torna o Java especial é sua arquitetura "Compilar uma vez, executar em qualquer lugar" (*Write Once, Run Anywhere* - WORA). Vamos entender como isso funciona na prática.
 
-### 🔄 O Ciclo de Vida de um Programa Java
+### O Ciclo de Vida de um Programa Java
 
 O processo de desenvolvimento e execução de um programa Java envolve várias etapas:
 
-#### 1️⃣ Escrita do Código Fonte
+#### 1 Escrita do Código Fonte
 
 O desenvolvimento começa com a escrita do código-fonte Java (arquivos `.java`):
 
@@ -23,7 +23,7 @@ public class OlaMundo {
 }
 ```
 
-#### 2️⃣ Compilação para Bytecode
+#### 2 Compilação para Bytecode
 
 Em seguida, o compilador Java (`javac`) converte o código-fonte em bytecode:
 
@@ -33,7 +33,7 @@ javac OlaMundo.java
 
 Este comando gera um arquivo de bytecode chamado `OlaMundo.class`. O bytecode é um conjunto de instruções intermediárias que não é código de máquina nativo, mas um formato independente de plataforma.
 
-#### 3️⃣ Carregamento e Verificação
+#### 3 Carregamento e Verificação
 
 Quando você executa um programa Java, acontece o seguinte:
 
@@ -41,7 +41,7 @@ Quando você executa um programa Java, acontece o seguinte:
 2. O verificador de bytecode examina o código para garantir que ele não viola as regras de segurança da JVM
 3. Isso evita comportamentos maliciosos ou instáveis
 
-#### 4️⃣ Execução pela JVM
+#### 4 Execução pela JVM
 
 Finalmente, a JVM interpreta ou compila o bytecode para executá-lo:
 
@@ -49,15 +49,15 @@ Finalmente, a JVM interpreta ou compila o bytecode para executá-lo:
 java OlaMundo
 ```
 
-### 🔍 Como a JVM Executa o Código
+### Como a JVM Executa o Código
 
 A JVM utiliza diferentes mecanismos para executar o bytecode:
 
-#### 🔄 Interpretação
+#### Interpretação
 
 Inicialmente, o bytecode é interpretado instrução por instrução. Este é um processo relativamente lento, mas permite que o programa seja executado imediatamente.
 
-#### ⚡ Compilação Just-In-Time (JIT)
+#### Compilação Just-In-Time (JIT)
 
 Para melhorar o desempenho, a JVM identifica "hot spots" (partes do código frequentemente executadas) e compila esse bytecode em código de máquina nativo usando o compilador JIT:
 
@@ -66,7 +66,7 @@ Para melhorar o desempenho, a JVM identifica "hot spots" (partes do código freq
 3. O código nativo é armazenado em cache para uso futuro
 4. Isso resulta em execução mais rápida nas próximas vezes
 
-#### 🧹 Gerenciamento de Memória e Garbage Collection
+#### Gerenciamento de Memória e Garbage Collection
 
 Um aspecto crucial da JVM é o gerenciamento automático de memória:
 
@@ -86,7 +86,7 @@ public void exemploGC() {
 }
 ```
 
-### 📊 Diagrama da Arquitetura Java
+### Diagrama da Arquitetura Java
 
 ```
 ┌───────────────────┐
@@ -121,7 +121,7 @@ public void exemploGC() {
 └───────────────────┘
 ```
 
-### 🌟 Vantagens desta Arquitetura
+### Vantagens desta Arquitetura
 
 A arquitetura do Java oferece diversos benefícios:
 
@@ -131,7 +131,7 @@ A arquitetura do Java oferece diversos benefícios:
 4. **Gerenciamento de memória**: O garbage collector evita vazamentos de memória
 5. **Abstrações de hardware**: Os desenvolvedores não precisam se preocupar com detalhes de baixo nível
 
-### 🔧 Na Prática: Compilando e Executando
+### Na Prática: Compilando e Executando
 
 Vamos ver como funciona na prática com um exemplo mais completo:
 
@@ -179,7 +179,7 @@ javac Calculadora.java
 java Calculadora
 ```
 
-### 🧠 Curiosidades sobre a Execução Java
+### Curiosidades sobre a Execução Java
 
 1. **HotSpot**: A implementação mais comum da JVM é a HotSpot da Oracle, conhecida por suas otimizações avançadas
 
@@ -199,6 +199,6 @@ java Calculadora
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/>

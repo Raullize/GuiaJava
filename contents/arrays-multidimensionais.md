@@ -1,12 +1,12 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=header"/>
 
-# 🔢 Arrays Multidimensionais
+# Arrays Multidimensionais
 
-## 🧩 Trabalhando com estruturas de dados complexas em Java
+## Trabalhando com estruturas de dados complexas em Java
 
 Arrays multidimensionais são estruturas que permitem organizar dados em múltiplas dimensões. Em Java, podemos pensar neles como "arrays de arrays", onde cada elemento é um array em si. Isso permite representar estruturas como matrizes, tabelas e dados com múltiplas dimensões.
 
-### 📊 O que são Arrays Multidimensionais?
+### O que são Arrays Multidimensionais?
 
 Um array multidimensional é uma maneira de armazenar dados em um formato tabular ou de múltiplas dimensões. Os tipos mais comuns são:
 
@@ -14,7 +14,7 @@ Um array multidimensional é uma maneira de armazenar dados em um formato tabula
 - **Arrays tridimensionais (3D)**: Representam dados com profundidade, como um cubo
 - **Arrays com mais dimensões**: Podem ter 4, 5 ou mais dimensões (menos comuns)
 
-#### 🎯 Aplicações comuns:
+#### Aplicações comuns:
 
 - Representar matrizes matemáticas
 - Armazenar dados tabulares (planilhas)
@@ -22,9 +22,9 @@ Um array multidimensional é uma maneira de armazenar dados em um formato tabula
 - Processamento de imagens (pixels)
 - Problemas científicos multidimensionais
 
-### 📝 Declaração e Inicialização de Arrays Bidimensionais
+### Declaração e Inicialização de Arrays Bidimensionais
 
-#### 1️⃣ Declaração
+#### 1 Declaração
 
 ```java
 // Declaração (apenas a referência)
@@ -32,7 +32,7 @@ int[][] matriz;
 String[][] tabuleiro;
 ```
 
-#### 2️⃣ Alocação de memória
+#### 2 Alocação de memória
 
 ```java
 // Criando um array 3x3 (3 linhas, 3 colunas)
@@ -42,14 +42,14 @@ matriz = new int[3][3];
 tabuleiro = new String[8][8];
 ```
 
-#### 3️⃣ Declaração e alocação combinadas
+#### 3 Declaração e alocação combinadas
 
 ```java
 double[][] notas = new double[5][4]; // 5 alunos, 4 bimestres
 boolean[][] mapa = new boolean[10][10]; // Mapa 10x10 (true = ocupado, false = livre)
 ```
 
-#### 4️⃣ Inicialização com valores
+#### 4 Inicialização com valores
 
 ```java
 // Matriz 3x3 com valores definidos
@@ -67,7 +67,7 @@ char[][] jogoVelha = {
 };
 ```
 
-### 🔄 Acessando e Modificando Elementos
+### Acessando e Modificando Elementos
 
 Para acessar ou modificar um elemento, precisamos especificar dois índices: linha e coluna.
 
@@ -86,7 +86,7 @@ matriz[0][0] = 10; // Define o elemento da primeira linha, primeira coluna como 
 matriz[2][1] = 15; // Define o elemento da terceira linha, segunda coluna como 15
 ```
 
-### 📏 Dimensões de um Array Multidimensional
+### Dimensões de um Array Multidimensional
 
 Em Java, podemos obter o número de linhas e colunas usando o atributo `length`:
 
@@ -103,9 +103,9 @@ int numColunas = matriz[0].length; // 4 (número de colunas na primeira linha)
 System.out.println("Dimensões: " + numLinhas + "x" + numColunas);
 ```
 
-### ♻️ Percorrendo Arrays Bidimensionais
+### Percorrendo Arrays Bidimensionais
 
-#### 1️⃣ Usando loops `for` aninhados
+#### 1 Usando loops `for` aninhados
 
 ```java
 int[][] matriz = {
@@ -123,7 +123,7 @@ for (int i = 0; i < matriz.length; i++) {
 }
 ```
 
-#### 2️⃣ Usando loops `for-each` aninhados
+#### 2 Usando loops `for-each` aninhados
 
 ```java
 int[][] matriz = {
@@ -141,7 +141,7 @@ for (int[] linha : matriz) {
 }
 ```
 
-### 🧮 Arrays Irregulares (Jagged Arrays)
+### Arrays Irregulares (Jagged Arrays)
 
 Em Java, as linhas de um array bidimensional podem ter comprimentos diferentes:
 
@@ -163,7 +163,7 @@ for (int i = 0; i < arrayIrregular.length; i++) {
 }
 ```
 
-#### 🔍 Criando arrays irregulares explicitamente
+#### Criando arrays irregulares explicitamente
 
 ```java
 // Declaração do array com apenas o primeiro dimensionamento
@@ -176,7 +176,7 @@ arrayIrregular[2] = new int[5]; // Terceira linha com 5 colunas
 arrayIrregular[3] = new int[1]; // Quarta linha com 1 coluna
 ```
 
-### 🧮 Arrays Tridimensionais (3D)
+### Arrays Tridimensionais (3D)
 
 Um array tridimensional pode ser visto como um array de arrays bidimensionais:
 
@@ -208,7 +208,7 @@ for (int i = 0; i < array3D.length; i++) {
 }
 ```
 
-### 🛠️ Operações com a Classe Arrays
+### Operações com a Classe Arrays
 
 A classe `java.util.Arrays` também pode ser utilizada com arrays multidimensionais:
 
@@ -250,7 +250,7 @@ public class ExemploArraysMultidimensionais {
 }
 ```
 
-### 🔨 Exemplos Práticos com Arrays Multidimensionais
+### Exemplos Práticos com Arrays Multidimensionais
 
 #### 1. Soma de Matrizes
 
@@ -348,17 +348,17 @@ public class DeterminanteMatriz {
 }
 ```
 
-### 🧠 Considerações sobre Desempenho
+### Considerações sobre Desempenho
 
 1. **Acesso sequencial**: Acessar elementos em ordem de como estão armazenados na memória (linha por linha) é mais eficiente
 2. **Consumo de memória**: Arrays multidimensionais podem consumir muita memória, especialmente com muitas dimensões
 3. **Localidade de cache**: Percorrer os elementos na ordem correta melhora o desempenho devido à cache locality
 
-### 💡 Dicas e Boas Práticas
+### Dicas e Boas Práticas
 
 1. **Validação de índices**: Sempre verifique se os índices estão dentro dos limites antes de acessar elementos
 2. **Documentação**: Documente claramente o significado de cada dimensão do array
-3. **Convenções de uso**: 
+3. **Convenções de uso**:
    - Use `i`, `j`, `k` para índices em loops aninhados
    - Primeiro índice geralmente representa linhas, segundo representa colunas
 4. **Arrays jagged vs. retangulares**: Use arrays jagged apenas quando necessário, arrays retangulares são mais fáceis de trabalhar
@@ -366,6 +366,6 @@ public class DeterminanteMatriz {
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/>

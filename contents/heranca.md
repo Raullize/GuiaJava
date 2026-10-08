@@ -1,20 +1,20 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=180&section=header&text=Herança&fontSize=30&fontColor=fff&animation=twinkling&fontAlignY=35"/>
 
-# 🔄 Herança
+# Herança
 
 A herança é um dos conceitos fundamentais da Programação Orientada a Objetos que permite criar novas classes baseadas em classes existentes, promovendo a reutilização de código e estabelecendo relações entre classes.
 
-## 📌 O que é Herança?
+## O que é Herança?
 
 Herança é o mecanismo pelo qual uma classe (subclasse ou classe derivada) adquire propriedades e comportamentos de outra classe (superclasse ou classe base). Isso estabelece uma relação "é um" entre as classes.
 
-## 🌲 Hierarquia de Classes
+## Hierarquia de Classes
 
 Em Java, a herança cria uma hierarquia de classes onde:
 - **Superclasse**: A classe "pai" que fornece atributos e métodos para ser herdados
 - **Subclasse**: A classe "filha" que herda e pode estender ou modificar o comportamento da superclasse
 
-## 📋 Sintaxe da Herança
+## Sintaxe da Herança
 
 A herança em Java é implementada usando a palavra-chave `extends`:
 
@@ -74,7 +74,7 @@ Neste exemplo:
 - `Cachorro` adiciona um novo atributo (`raca`) e um novo método (`latir`)
 - Um objeto `Cachorro` pode usar métodos como `comer()` e `dormir()` herdados de `Animal`
 
-## 🔑 A Palavra-chave `super`
+## A Palavra-chave `super`
 
 A palavra-chave `super` é usada para acessar membros da superclasse:
 
@@ -95,7 +95,7 @@ A palavra-chave `super` é usada para acessar membros da superclasse:
    }
    ```
 
-## 🔄 Sobrescrita de Métodos (Override)
+## Sobrescrita de Métodos (Override)
 
 A sobrescrita permite que uma subclasse forneça uma implementação específica de um método já definido na superclasse:
 
@@ -114,7 +114,7 @@ Regras para sobrescrita de métodos:
 3. O método na subclasse não pode declarar exceções mais amplas
 4. Use a anotação `@Override` para garantir que está sobrescrevendo corretamente
 
-## 🛑 Classes e Métodos `final`
+## Classes e Métodos `final`
 
 Para impedir que uma classe seja estendida ou um método seja sobrescrito, use a palavra-chave `final`:
 
@@ -132,7 +132,7 @@ public class Veiculo {
 }
 ```
 
-## 👨‍👩‍👧 Herança Múltipla
+## Herança Múltipla
 
 Java não suporta herança múltipla de classes (uma classe não pode estender mais de uma classe), mas permite uma classe implementar múltiplas interfaces. Isso evita o "problema do diamante" que ocorre em linguagens com herança múltipla.
 
@@ -148,7 +148,7 @@ public class Aluno extends Pessoa implements Estudante, Estagiario {
 // }
 ```
 
-## 👑 A Classe `Object`
+## A Classe `Object`
 
 Em Java, todas as classes herdam automaticamente da classe `Object`. Isso significa que todo objeto possui métodos como:
 - `toString()`: Retorna uma representação em string do objeto
@@ -187,7 +187,7 @@ public class Produto {
 }
 ```
 
-## 🏗️ Construtores e Herança
+## Construtores e Herança
 
 Quando uma subclasse é instanciada:
 1. O construtor da superclasse é chamado primeiro (implícita ou explicitamente)
@@ -223,7 +223,7 @@ public class Cachorro extends Animal {
 }
 ```
 
-## 🤔 Quando Usar Herança?
+## Quando Usar Herança?
 
 Use herança quando:
 - Existe uma clara relação "é um" entre as classes
@@ -235,7 +235,7 @@ Prefira composição à herança quando:
 - Você precisa de maior flexibilidade para mudar comportamentos em tempo de execução
 - Você quer reutilizar código sem criar dependências fortes entre classes
 
-## 💼 Boas Práticas
+## Boas Práticas
 
 1. **Favoreça composição sobre herança** quando possível
 2. **Não crie hierarquias profundas** de herança (mais de 2-3 níveis)
@@ -245,6 +245,6 @@ Prefira composição à herança quando:
 
 ---
 
-[📌 Voltar para o índice](../README.md)
+[Voltar para o índice](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/>

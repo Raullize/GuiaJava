@@ -1,10 +1,10 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=180&section=header&text=Orientação%20a%20Objetos&fontSize=30&fontColor=fff&animation=twinkling&fontAlignY=35"/>
 
-# 🏗️ Orientação a Objetos
+# Orientação a Objetos
 
 A orientação a objetos é um paradigma de programação que organiza o software em torno de dados, ou objetos, em vez de funções e lógica. Java é uma linguagem fortemente orientada a objetos, e entender este conceito é fundamental para dominar a linguagem.
 
-## 📌 Conceitos Fundamentais
+## Conceitos Fundamentais
 
 A orientação a objetos em Java se baseia em quatro conceitos principais:
 
@@ -13,7 +13,7 @@ A orientação a objetos em Java se baseia em quatro conceitos principais:
 3. **Polimorfismo**: Diferentes comportamentos através da mesma interface
 4. **Abstração**: Simplificar sistemas complexos, isolando aspectos relevantes
 
-## 🧩 Por que usar Orientação a Objetos?
+## Por que usar Orientação a Objetos?
 
 | Benefício | Descrição |
 |-----------|-----------|
@@ -23,7 +23,7 @@ A orientação a objetos em Java se baseia em quatro conceitos principais:
 | **Organização** | O código fica estruturado de forma lógica e intuitiva |
 | **Segurança** | Através do encapsulamento, os dados são protegidos |
 
-## 💡 Pensando em Objetos
+## Pensando em Objetos
 
 Para programar orientado a objetos em Java, você precisa desenvolver uma forma diferente de pensar:
 
@@ -32,7 +32,7 @@ Para programar orientado a objetos em Java, você precisa desenvolver uma forma 
 3. **Determine os comportamentos** (métodos) que esses objetos precisam ter
 4. **Estabeleça as relações** entre diferentes objetos
 
-## 🚀 Exemplo Prático
+## Exemplo Prático
 
 Considere um sistema simples de biblioteca:
 
@@ -87,7 +87,7 @@ public class Livro {
 }
 ```
 
-## 🔶 Estrutura de uma Classe em Java
+## Estrutura de uma Classe em Java
 
 Toda classe Java segue uma estrutura básica:
 
@@ -108,7 +108,7 @@ Toda classe Java segue uma estrutura básica:
 }
 ```
 
-## 💼 Melhores Práticas
+## Melhores Práticas
 
 1. **Nomes significativos**: Use nomes que descrevam bem o propósito da classe
 2. **Princípio da responsabilidade única**: Uma classe deve ter apenas uma razão para mudar
@@ -116,7 +116,7 @@ Toda classe Java segue uma estrutura básica:
 4. **Favoreça composição sobre herança**: É mais flexível combinar objetos do que criar hierarquias complexas
 5. **Documente seu código**: Use comentários Javadoc para descrever classes e métodos
 
-## ⏭️ Próximos Passos
+## Próximos Passos
 
 Nos próximos tópicos, exploraremos em detalhes cada um dos conceitos fundamentais da orientação a objetos:
 - [Classes e Objetos](classes-objetos.md)
@@ -127,6 +127,6 @@ Nos próximos tópicos, exploraremos em detalhes cada um dos conceitos fundament
 
 ---
 
-[📌 Voltar para o índice](../README.md)
+[Voltar para o índice](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/>

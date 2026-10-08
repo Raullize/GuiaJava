@@ -1,14 +1,14 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=header"/>
 
-# 🔠 Manipulação de Strings
+# Manipulação de Strings
 
-## 📝 Trabalhando com texto em Java
+## Trabalhando com texto em Java
 
 Strings são um dos tipos de dados mais utilizados em qualquer linguagem de programação. Em Java, as strings são representadas pela classe `String` e possuem diversas funcionalidades para manipulação de texto. Este guia apresenta as principais operações e boas práticas para trabalhar com strings.
 
-### 📋 Conceitos fundamentais sobre Strings em Java
+### Conceitos fundamentais sobre Strings em Java
 
-#### 🧱 Imutabilidade
+#### Imutabilidade
 
 Em Java, objetos `String` são **imutáveis**, ou seja, uma vez criados, seu conteúdo não pode ser alterado. Qualquer operação que pareça modificar uma string na verdade cria um novo objeto.
 
@@ -19,7 +19,7 @@ texto = texto + " Mundo"; // Não modifica o objeto original, cria um novo
 
 Esta característica tem implicações importantes para performance e segurança.
 
-#### 🏭 String Pool
+#### String Pool
 
 Java mantém um "pool de strings" para otimizar o uso de memória, reutilizando strings idênticas:
 
@@ -33,7 +33,7 @@ System.out.println(s1 == s3); // false - referências diferentes
 System.out.println(s1.equals(s3)); // true - mesmo conteúdo
 ```
 
-### 🛠️ Criando Strings
+### Criando Strings
 
 Existem várias maneiras de criar strings em Java:
 
@@ -57,9 +57,9 @@ builder.append("Olá, ").append("mundo").append("!");
 String texto5 = builder.toString();
 ```
 
-### 🔄 Operações básicas com Strings
+### Operações básicas com Strings
 
-#### 📏 Comprimento e verificações
+#### Comprimento e verificações
 
 ```java
 String texto = "Programação Java";
@@ -81,7 +81,7 @@ System.out.println(branco.isEmpty()); // false
 System.out.println(branco.isBlank()); // true (Java 11+)
 ```
 
-#### 🧮 Comparação de Strings
+#### Comparação de Strings
 
 ```java
 String s1 = "Java";
@@ -100,7 +100,7 @@ int comparacao = s1.compareTo(s2); // negativo (J vem antes de j na tabela ASCII
 int comparacaoIgnoreCase = s1.compareToIgnoreCase(s2); // 0 (iguais ignorando case)
 ```
 
-#### 🔍 Busca e localização
+#### Busca e localização
 
 ```java
 String texto = "O Java é uma linguagem de programação orientada a objetos";
@@ -120,7 +120,7 @@ boolean comecaCom = texto.startsWith("O Java"); // true
 boolean terminaCom = texto.endsWith("objetos"); // true
 ```
 
-#### ✂️ Extração e manipulação
+#### Extração e manipulação
 
 ```java
 String texto = "Programação Java é divertida";
@@ -148,7 +148,7 @@ String apenasNumeros = numeros.replaceAll("[^0-9]", "");
 // apenasNumeros = "123"
 ```
 
-#### 🔄 Transformações
+#### Transformações
 
 ```java
 String texto = "  Java Programming  ";
@@ -173,7 +173,7 @@ String semTodosEspacos = texto.strip(); // "Java Programming"
 String repetida = "Java ".repeat(3); // "Java Java Java "
 ```
 
-### 🧵 StringBuilder e StringBuffer
+### StringBuilder e StringBuffer
 
 Para concatenar ou modificar strings de forma eficiente, use `StringBuilder` (não thread-safe) ou `StringBuffer` (thread-safe):
 
@@ -192,7 +192,7 @@ for (int i = 0; i < 1000; i++) {
 String resultadoEficiente = sb.toString();
 ```
 
-#### 📊 Principais métodos de StringBuilder
+#### Principais métodos de StringBuilder
 
 ```java
 StringBuilder sb = new StringBuilder("Java");
@@ -220,14 +220,14 @@ sb.setLength(7); // "osoredo" (trunca para 7 caracteres)
 String resultado = sb.toString();
 ```
 
-#### 🔄 StringBuilder vs StringBuffer
+#### StringBuilder vs StringBuffer
 
 | Característica | StringBuilder | StringBuffer |
 |----------------|---------------|--------------|
-| Thread-safety  | Não           | Sim          |
-| Performance    | Mais rápido   | Mais lento   |
-| Sincronização  | Não           | Sim          |
-| Caso de uso    | Single-thread | Multi-thread |
+| Thread-safety | Não | Sim |
+| Performance | Mais rápido | Mais lento |
+| Sincronização | Não | Sim |
+| Caso de uso | Single-thread | Multi-thread |
 
 ```java
 // Use StringBuilder em código single-thread
@@ -237,9 +237,9 @@ StringBuilder sb = new StringBuilder();
 StringBuffer sbf = new StringBuffer();
 ```
 
-### 🌐 Internacionalização e codificação
+### Internacionalização e codificação
 
-#### 🌍 Caracteres Unicode e codificação
+#### Caracteres Unicode e codificação
 
 Java usa UTF-16 para representação interna de strings, suportando caracteres de todos os idiomas:
 
@@ -257,7 +257,7 @@ int unicodeValue = (int) c; // 79
 String omega = "\u03A9"; // "Ω" (letra grega ômega)
 ```
 
-#### 🧰 Formatação de strings
+#### Formatação de strings
 
 ```java
 // Usando String.format (similar a printf)
@@ -280,7 +280,7 @@ String dataFormatada = hoje.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
 // Ex: "21/10/2023"
 ```
 
-### 🔍 Expressões Regulares com Strings
+### Expressões Regulares com Strings
 
 Java permite usar expressões regulares (regex) para processamento avançado de texto:
 
@@ -307,7 +307,7 @@ String textoLimpo = texto.replaceAll("[^a-zA-Z0-9 ]", "");
 // textoLimpo = "Contato 11 987654321 ou email joaoexemplocom"
 ```
 
-### 💡 Recursos modernos (Java 11+)
+### Recursos modernos (Java 11+)
 
 Java 11 e versões posteriores introduziram novas funcionalidades para strings:
 
@@ -334,7 +334,7 @@ String texto = "42";
 Integer numero = texto.transform(Integer::parseInt); // 42
 ```
 
-### 📊 Boas práticas e otimização
+### Boas práticas e otimização
 
 #### ⚠️ Evitando problemas comuns
 
@@ -345,7 +345,7 @@ Integer numero = texto.transform(Integer::parseInt); // 42
    for (int i = 0; i < 1000; i++) {
        resultado += i;
    }
-   
+  
    // Bom - usa StringBuilder
    StringBuilder sb = new StringBuilder();
    for (int i = 0; i < 1000; i++) {
@@ -358,10 +358,10 @@ Integer numero = texto.transform(Integer::parseInt); // 42
    ```java
    // Ruim - compara referências, não conteúdo
    if (str1 == str2) {...}
-   
+  
    // Bom - compara conteúdo
    if (str1.equals(str2)) {...}
-   
+  
    // Seguro contra null
    if (Objects.equals(str1, str2)) {...}
    ```
@@ -370,14 +370,14 @@ Integer numero = texto.transform(Integer::parseInt); // 42
    ```java
    // Perigoso - pode causar NullPointerException
    if (minhaString.equals("valor")) {...}
-   
+  
    // Seguro - evita NullPointerException
    if ("valor".equals(minhaString)) {...}
    // ou
    if (Objects.equals(minhaString, "valor")) {...}
    ```
 
-#### 🚀 Dicas de performance
+#### Dicas de performance
 
 1. **Use `StringBuilder` para múltiplas concatenações**
 2. **Pré-dimensione StringBuilder quando souber o tamanho aproximado**:
@@ -387,16 +387,16 @@ Integer numero = texto.transform(Integer::parseInt); // 42
 3. **Reutilize objetos `Pattern` para expressões regulares repetidas**:
    ```java
    // Compile o Pattern uma vez, use-o várias vezes
-   private static final Pattern EMAIL_PATTERN = 
+   private static final Pattern EMAIL_PATTERN =
        Pattern.compile("\\w+@\\w+\\.\\w+");
    ```
 4. **Evite operações desnecessárias em strings grandes**
-5. **Use o método adequado**: 
+5. **Use o método adequado**:
    - `equals()` para comparação exata
    - `equalsIgnoreCase()` para comparar ignorando maiúsculas/minúsculas
    - `startsWith()/endsWith()` em vez de substring + equals
 
-#### 🧪 Exemplo prático: Validador de CPF
+#### Exemplo prático: Validador de CPF
 
 Combinando vários conceitos de manipulação de strings:
 
@@ -448,7 +448,7 @@ public class ValidadorCPF {
 }
 ```
 
-### 📋 Resumo de métodos essenciais da classe String
+### Resumo de métodos essenciais da classe String
 
 | Método | Descrição | Exemplo |
 |--------|-----------|---------|
@@ -480,6 +480,6 @@ public class ValidadorCPF {
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/>

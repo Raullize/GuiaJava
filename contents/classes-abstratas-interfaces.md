@@ -1,14 +1,14 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=header"/>
 
-# 🧩 Classes Abstratas e Interfaces
+# Classes Abstratas e Interfaces
 
-## 🏗️ Construindo as fundações para hierarquias flexíveis em Java
+## Construindo as fundações para hierarquias flexíveis em Java
 
 As classes abstratas e interfaces são componentes fundamentais da programação orientada a objetos em Java. Elas permitem criar hierarquias de classes bem estruturadas, estabelecer contratos de comportamento e implementar polimorfismo de forma elegante. Este guia explora ambos os conceitos, suas diferenças e como utilizá-los de maneira eficaz.
 
-### 📋 Classes Abstratas
+### Classes Abstratas
 
-#### 🧠 O Conceito
+#### O Conceito
 
 Uma classe abstrata é uma classe que não pode ser instanciada diretamente e foi projetada para ser estendida por subclasses. É ideal para representar conceitos abstratos ou incompletos.
 
@@ -45,7 +45,7 @@ Principais características:
 - Pode ter construtores, atributos e métodos estáticos
 - Não pode ser instanciada diretamente
 
-#### 🛠️ Métodos Abstratos
+#### Métodos Abstratos
 
 Os métodos abstratos definem apenas a assinatura (nome, parâmetros e retorno), sem implementação:
 
@@ -60,7 +60,7 @@ Características dos métodos abstratos:
 - Devem ser implementados por subclasses não-abstratas
 - Não podem ser privados ou finais
 
-#### 📦 Estendendo Classes Abstratas
+#### Estendendo Classes Abstratas
 
 Para utilizar uma classe abstrata, é necessário estendê-la e implementar seus métodos abstratos:
 
@@ -93,7 +93,7 @@ rex.dormir();     // Rex está dormindo...
 rex.abanarRabo(); // Rex está abanando o rabo!
 ```
 
-#### 🔄 Classes Abstratas vs. Classes Concretas
+#### Classes Abstratas vs. Classes Concretas
 
 | Característica | Classe Abstrata | Classe Concreta |
 |----------------|----------------|-----------------|
@@ -102,9 +102,9 @@ rex.abanarRabo(); // Rex está abanando o rabo!
 | Propósito | Define comportamento comum e estrutura para subclasses | Implementa funcionalidade completa |
 | Natureza | Incompleta, precisa ser estendida | Completa, pronta para uso |
 
-### 📋 Interfaces
+### Interfaces
 
-#### 🧠 O Conceito
+#### O Conceito
 
 Uma interface define um contrato que as classes implementadoras devem seguir. Em sua forma tradicional, ela contém apenas métodos abstratos e constantes.
 
@@ -126,7 +126,7 @@ Principais características:
 - A partir do Java 8, pode conter métodos default e estáticos
 - A partir do Java 9, pode conter métodos privados
 
-#### 🛠️ Implementando Interfaces
+#### Implementando Interfaces
 
 Uma classe implementa uma interface usando a palavra-chave `implements`:
 
@@ -161,7 +161,7 @@ boeing.voar();   // Boeing 737 decolando e subindo para 5000 metros
 boeing.pousar(); // Boeing 737 descendo e pousando
 ```
 
-#### 🧩 Múltiplas Interfaces
+#### Múltiplas Interfaces
 
 Uma classe pode implementar várias interfaces, o que permite uma forma de "herança múltipla" em Java:
 
@@ -222,7 +222,7 @@ public class Hidroaviao implements Voador, Motorizado, Navegavel {
 }
 ```
 
-#### 🔄 Recursos Modernos de Interfaces (Java 8+)
+#### Recursos Modernos de Interfaces (Java 8+)
 
 A partir do Java 8, interfaces podem conter:
 
@@ -279,7 +279,7 @@ public interface Logger {
 }
 ```
 
-### 🔄 Comparação: Classes Abstratas vs. Interfaces
+### Comparação: Classes Abstratas vs. Interfaces
 
 | Característica | Classe Abstrata | Interface |
 |----------------|----------------|-----------|
@@ -291,7 +291,7 @@ public interface Logger {
 | Modificadores | Pode usar protected, private, etc. | Métodos são implicitamente public |
 | Propósito | Compartilhar código comum em uma hierarquia | Definir comportamentos que podem ser implementados por classes não relacionadas |
 
-### 🏆 Quando usar cada um?
+### Quando usar cada um?
 
 #### ✅ Use Classes Abstratas quando:
 
@@ -359,7 +359,7 @@ public class Freelancer implements Pagavel {
 }
 ```
 
-### 🌟 Combinando Classes Abstratas e Interfaces
+### Combinando Classes Abstratas e Interfaces
 
 Em muitos casos, as melhores soluções utilizam ambos os conceitos:
 
@@ -431,9 +431,9 @@ public class Cliente extends Pessoa implements Autenticavel {
 }
 ```
 
-### 🚀 Padrões de Design com Classes Abstratas e Interfaces
+### Padrões de Design com Classes Abstratas e Interfaces
 
-#### 🏭 Template Method Pattern
+#### Template Method Pattern
 
 Utiliza classes abstratas para definir o esqueleto de um algoritmo:
 
@@ -484,7 +484,7 @@ public class ProcessadorPDF extends ProcessadorDocumento {
 }
 ```
 
-#### 🎯 Strategy Pattern
+#### Strategy Pattern
 
 Utiliza interfaces para definir uma família de algoritmos:
 
@@ -534,7 +534,7 @@ ordenador.setEstrategia(new OrdenacaoQuickSort());
 ordenador.ordenarDados(new int[]{5, 2, 9, 1, 5});
 ```
 
-### 🧠 Boas Práticas
+### Boas Práticas
 
 #### ✅ O que fazer
 
@@ -553,7 +553,7 @@ ordenador.ordenarDados(new int[]{5, 2, 9, 1, 5});
        protected void registrarErro(String erro) {
            System.err.println("Erro: " + erro);
        }
-       
+  
        // Parte que varia
        public abstract boolean validar(Object obj);
    }
@@ -565,7 +565,7 @@ ordenador.ordenarDados(new int[]{5, 2, 9, 1, 5});
    public interface Enviavel {
        void enviar(String destino);
    }
-   
+  
    // Separando responsabilidades
    public interface Formatavel {
        String formatar();
@@ -577,7 +577,7 @@ ordenador.ordenarDados(new int[]{5, 2, 9, 1, 5});
    public interface Repositorio<T> {
        void salvar(T entidade);
        T buscarPorId(long id);
-       
+  
        // Método default adicionado posteriormente
        default List<T> buscarTodos() {
            // Implementação padrão simples
@@ -633,7 +633,7 @@ ordenador.ordenarDados(new int[]{5, 2, 9, 1, 5});
    class E extends D { /* ... */ }
    ```
 
-### 📋 Exemplo Completo: Sistema de Pagamentos
+### Exemplo Completo: Sistema de Pagamentos
 
 ```java
 // Interface base
@@ -760,7 +760,7 @@ public class SistemaPagamentos {
 }
 ```
 
-### 📝 Considerações Finais
+### Considerações Finais
 
 Classes abstratas e interfaces são ferramentas fundamentais para criar designs orientados a objetos robustos e flexíveis em Java. Cada uma tem seu lugar e propósito, e a combinação inteligente de ambas geralmente leva às melhores soluções.
 
@@ -775,6 +775,6 @@ Com essas ferramentas, você pode criar sistemas mais modulares, testáveis e f�
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/>

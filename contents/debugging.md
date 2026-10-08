@@ -1,14 +1,14 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=header"/>
 
-# 🔍 Debugging
+# Debugging
 
-## 🐛 Encontrando e corrigindo erros em código Java
+## Encontrando e corrigindo erros em código Java
 
 Debugging é o processo de identificar e corrigir erros (bugs) em seus programas. É uma habilidade essencial para qualquer desenvolvedor Java. Este guia apresentará as técnicas, ferramentas e boas práticas para depurar eficientemente seu código Java.
 
-### 📋 Fundamentos do debugging
+### Fundamentos do debugging
 
-#### 🧠 O que é debugging?
+#### O que é debugging?
 
 Debugging é o processo de:
 1. Identificar a presença de um erro
@@ -17,7 +17,7 @@ Debugging é o processo de:
 4. Corrigir o erro
 5. Verificar se a correção funciona
 
-#### 🔄 O ciclo de debugging
+#### O ciclo de debugging
 
 ![Ciclo de Debugging](https://i.imgur.com/DjQtKAD.png)
 
@@ -28,11 +28,11 @@ Debugging é o processo de:
 5. **Testar**: Verificar se o problema foi realmente resolvido
 6. **Refletir**: Aprender com o erro para prevenir problemas similares
 
-### 🚩 Tipos de erros em Java
+### Tipos de erros em Java
 
 Em Java, existem três tipos principais de erros:
 
-#### 1️⃣ Erros de compilação (Compile-time errors)
+#### 1 Erros de compilação (Compile-time errors)
 
 Ocorrem quando o código não pode ser compilado devido à violação das regras de sintaxe ou semântica da linguagem.
 
@@ -56,7 +56,7 @@ Estes erros são os mais fáceis de corrigir porque:
 - A mensagem geralmente é clara sobre o problema
 - O programa não compila até que todos sejam corrigidos
 
-#### 2️⃣ Erros de execução (Runtime errors)
+#### 2 Erros de execução (Runtime errors)
 
 Ocorrem durante a execução do programa e geralmente resultam em exceções.
 
@@ -82,7 +82,7 @@ Para erros de execução:
 - O programa é interrompido (a menos que a exceção seja tratada)
 - É preciso analisar o stack trace para encontrar a origem
 
-#### 3️⃣ Erros lógicos (Logical errors)
+#### 3 Erros lógicos (Logical errors)
 
 Os mais difíceis de detectar - o programa compila e executa, mas produz resultados incorretos.
 
@@ -111,9 +111,9 @@ Estes erros:
 - Requerem análise cuidadosa da lógica
 - Podem passar despercebidos por muito tempo
 
-### 🛠️ Ferramentas e técnicas de debugging
+### Ferramentas e técnicas de debugging
 
-#### 🖨️ Debugging usando prints
+#### Debugging usando prints
 
 A técnica mais simples é adicionar instruções `System.out.println()` em pontos estratégicos:
 
@@ -143,7 +143,7 @@ public int calcularFatorial(int n) {
 - Difícil para situações complexas
 - Difícil remover todos após o debug
 
-#### 🔬 Usando a IDE para debugging
+#### Usando a IDE para debugging
 
 IDEs modernas como IntelliJ IDEA, Eclipse e NetBeans possuem poderosas ferramentas de debugging:
 
@@ -186,7 +186,7 @@ IDEs modernas como IntelliJ IDEA, Eclipse e NetBeans possuem poderosas ferrament
    }
    ```
 
-##### 🔄 Como usar o debugger na IDE
+##### Como usar o debugger na IDE
 
 **No IntelliJ IDEA**:
 1. Clique na margem esquerda para definir breakpoints
@@ -208,7 +208,7 @@ IDEs modernas como IntelliJ IDEA, Eclipse e NetBeans possuem poderosas ferrament
 3. Use os controles no painel superior
 4. Observe variáveis no painel de Debug
 
-#### 📝 Logging em vez de prints
+#### Logging em vez de prints
 
 Para debugging mais estruturado, use um framework de logging como Log4j ou java.util.logging:
 
@@ -242,14 +242,14 @@ public class CalculadoraComLog {
 - Saída configurável (console, arquivo, serviço remoto)
 - Melhor para aplicações multi-thread
 
-#### 🛠️ Ferramentas especializadas
+#### Ferramentas especializadas
 
 1. **jdb**: Debugger em linha de comando do Java
 2. **JVisualVM**: Ferramenta visual para monitorar e profiling
 3. **JConsole**: Para monitorar performance e recursos
 4. **Java Mission Control**: Diagnóstico e monitoramento avançado
 
-#### 🔄 Debugging remoto
+#### Debugging remoto
 
 Para debuggar aplicações em servidores remotos:
 
@@ -260,9 +260,9 @@ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 MeuProgr
 
 E então conecte sua IDE ao processo na porta 5005.
 
-### 📋 Estratégias eficazes de debugging
+### Estratégias eficazes de debugging
 
-#### 🔍 Dividir e conquistar (Debugging binário)
+#### Dividir e conquistar (Debugging binário)
 
 1. Divida o código em seções
 2. Determine se o problema está na primeira ou segunda metade
@@ -281,13 +281,13 @@ public void metodoLongo() {
 }
 ```
 
-#### 🧪 Isolamento e reprodução
+#### Isolamento e reprodução
 
 1. Crie um pequeno exemplo que reproduza o problema
 2. Remova código não relacionado
 3. Simplifique até ter o menor exemplo possível que reproduz o erro
 
-#### 🕵️ Usando testes unitários para debugging
+#### Usando testes unitários para debugging
 
 Crie testes para reproduzir e verificar o bug:
 
@@ -314,15 +314,15 @@ public class CalculadoraTest {
 }
 ```
 
-#### 🧩 Debug por hipótese e eliminação
+#### Debug por hipótese e eliminação
 
 1. Formule uma hipótese sobre a causa do problema
 2. Projete um teste para provar ou refutar a hipótese
 3. Elimine possibilidades até encontrar a causa real
 
-### 💥 Debugging de exceções comuns
+### Debugging de exceções comuns
 
-#### 🚫 NullPointerException
+#### NullPointerException
 
 ```java
 public void processarUsuario(Usuario usuario) {
@@ -343,7 +343,7 @@ public void processarUsuario(Usuario usuario) {
 - Considere `Optional<T>` para valores que podem ser ausentes
 - Utilize anotações como `@NotNull` e `@Nullable`
 
-#### 🔢 ArrayIndexOutOfBoundsException
+#### ArrayIndexOutOfBoundsException
 
 ```java
 public void processarArray(int[] numeros) {
@@ -364,7 +364,7 @@ public void processarArray(int[] numeros) {
 }
 ```
 
-#### 📝 ClassCastException
+#### ClassCastException
 
 ```java
 public void processarObjeto(Object obj) {
@@ -379,7 +379,7 @@ public void processarObjeto(Object obj) {
 }
 ```
 
-#### 🧮 ArithmeticException
+#### ArithmeticException
 
 ```java
 public int dividir(int a, int b) {
@@ -394,7 +394,7 @@ public int dividir(int a, int b) {
 }
 ```
 
-#### 🧵 ConcurrentModificationException
+#### ConcurrentModificationException
 
 ```java
 public void processarLista(List<String> items) {
@@ -416,9 +416,9 @@ public void processarLista(List<String> items) {
 }
 ```
 
-### 🔄 Depuração avançada
+### Depuração avançada
 
-#### 🧵 Debugging de código multi-thread
+#### Debugging de código multi-thread
 
 Desafios:
 - Condições de corrida
@@ -441,7 +441,7 @@ void metodoMultithread() {
 }
 ```
 
-#### 🔄 Debug de memory leaks
+#### Debug de memory leaks
 
 Sintomas:
 - Programa fica cada vez mais lento
@@ -466,7 +466,7 @@ public class CacheComLeak {
 }
 ```
 
-#### 🌡️ Debugging de performance
+#### Debugging de performance
 
 Ferramentas:
 - Profilers (JVisualVM, YourKit, JProfiler)
@@ -479,7 +479,7 @@ Métricas importantes:
 - Utilização de memória
 - Método mais chamados (hotspots)
 
-### 💡 Boas práticas de debugging
+### Boas práticas de debugging
 
 #### ✅ Prevenção é melhor que cura
 
@@ -489,7 +489,7 @@ Métricas importantes:
 4. **Mantenha o código simples**
 5. **Documente pressupostos e restrições**
 
-#### 📝 Documentando bugs
+#### Documentando bugs
 
 Ao encontrar um bug, documente:
 - Como reproduzir o problema
@@ -497,7 +497,7 @@ Ao encontrar um bug, documente:
 - A solução implementada
 - Testes adicionados para prevenir regressões
 
-#### 🔄 Debugging científico
+#### Debugging científico
 
 1. **Observe**: Colete todos os fatos disponíveis
 2. **Hipótese**: Crie uma teoria sobre a causa
@@ -505,7 +505,7 @@ Ao encontrar um bug, documente:
 4. **Teste**: Modifique o código para testar sua hipótese
 5. **Analise**: Verifique os resultados e repita se necessário
 
-#### 📊 Debugging por diferença
+#### Debugging por diferença
 
 Compare versões funcionais e não-funcionais:
 - Diff de código
@@ -513,7 +513,7 @@ Compare versões funcionais e não-funcionais:
 - Diff de logs
 - Diff de resultados
 
-### 🔧 Ferramentas úteis para debugging
+### Ferramentas úteis para debugging
 
 | Ferramenta | Tipo | Uso |
 |------------|------|-----|
@@ -528,7 +528,7 @@ Compare versões funcionais e não-funcionais:
 | Log4j/Logback | Lib | Framework de logging |
 | JUnit/TestNG | Lib | Testes automatizados |
 
-### 📋 Checklist de Debugging
+### Checklist de Debugging
 
 Quando enfrentar um bug difícil, siga esta checklist:
 
@@ -543,7 +543,7 @@ Quando enfrentar um bug difícil, siga esta checklist:
 9. ✅ **Considere condições de borda**
 10. ✅ **Documente a solução e adicione testes**
 
-### 🎓 Aprendendo com bugs
+### Aprendendo com bugs
 
 Bugs são oportunidades de aprendizado:
 - Reflita sobre por que o bug ocorreu
@@ -555,6 +555,6 @@ Bugs são oportunidades de aprendizado:
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/>

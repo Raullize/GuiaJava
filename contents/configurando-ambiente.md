@@ -1,16 +1,16 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=header"/>
 
-# 💻 Configurando o ambiente de desenvolvimento
+# Configurando o ambiente de desenvolvimento
 
-## 🔧 Preparando tudo para começar a programar em Java
+## Preparando tudo para começar a programar em Java
 
 A configuração adequada do ambiente de desenvolvimento é o primeiro passo para iniciar sua jornada com Java. Este guia explica de forma prática como configurar seu computador para desenvolver aplicações Java.
 
-### 📥 Instalando o JDK (Java Development Kit)
+### Instalando o JDK (Java Development Kit)
 
 O JDK contém tudo o que você precisa para desenvolver aplicações Java, incluindo o compilador, a JVM e um conjunto completo de bibliotecas.
 
-#### 🪟 Windows
+#### Windows
 
 1. **Baixe o JDK:**
    - Acesse o site oficial da Oracle: [Oracle JDK](https://www.oracle.com/java/technologies/downloads/)
@@ -37,7 +37,7 @@ O JDK contém tudo o que você precisa para desenvolver aplicações Java, inclu
    - Digite: `javac -version`
    - Você deve ver a versão do Java instalada em ambos os comandos
 
-#### 🍎 macOS
+#### macOS
 
 1. **Baixe o JDK:**
    - Acesse [Oracle JDK](https://www.oracle.com/java/technologies/downloads/) ou [Adoptium](https://adoptium.net/)
@@ -53,7 +53,7 @@ O JDK contém tudo o que você precisa para desenvolver aplicações Java, inclu
    - Digite: `javac -version`
    - Você deve ver a versão do Java instalada
 
-#### 🐧 Linux
+#### Linux
 
 1. **Instale o JDK via gerenciador de pacotes:**
 
@@ -79,11 +79,11 @@ O JDK contém tudo o que você precisa para desenvolver aplicações Java, inclu
    javac -version
    ```
 
-### 🧩 Configurando uma IDE (Ambiente de Desenvolvimento Integrado)
+### Configurando uma IDE (Ambiente de Desenvolvimento Integrado)
 
 Uma boa IDE facilita enormemente o desenvolvimento em Java, fornecendo recursos como autocompletar, debugging e gerenciamento de projetos.
 
-#### 🔵 IntelliJ IDEA
+#### IntelliJ IDEA
 
 Uma das IDE's mais populares e poderosas para Java:
 
@@ -102,7 +102,7 @@ Uma das IDE's mais populares e poderosas para Java:
    - Em "SDKs", clique no "+" e selecione "JDK"
    - Navegue até o diretório de instalação do JDK e selecione-o
 
-#### 🪶 Eclipse
+#### Eclipse
 
 Uma IDE gratuita e de código aberto, muito popular:
 
@@ -121,7 +121,7 @@ Uma IDE gratuita e de código aberto, muito popular:
    - Vá para "Window" > "Preferences" > "Java" > "Installed JREs"
    - Clique em "Add", selecione "Standard VM" e navegue até o diretório do JDK
 
-#### 💻 VS Code
+#### VS Code
 
 Uma opção leve e altamente personalizável:
 
@@ -143,7 +143,7 @@ Uma opção leve e altamente personalizável:
    - Pesquise por "java.home"
    - Defina o caminho para o diretório do JDK
 
-### ⚙️ Configurando o Maven (opcional, mas recomendado)
+### Configurando o Maven (opcional, mas recomendado)
 
 O Maven é uma ferramenta de automação de compilação que simplifica o gerenciamento de dependências e o processo de build:
 
@@ -163,7 +163,7 @@ O Maven é uma ferramenta de automação de compilação que simplifica o gerenc
    mvn -version
    ```
 
-### 🌐 Configurando o Git (opcional, mas recomendado)
+### Configurando o Git (opcional, mas recomendado)
 
 O Git é essencial para controle de versão e colaboração:
 
@@ -178,7 +178,7 @@ O Git é essencial para controle de versão e colaboração:
    git config --global user.email "seu.email@exemplo.com"
    ```
 
-### 🚀 Verificando se tudo está funcionando
+### Verificando se tudo está funcionando
 
 Após configurar o ambiente, é importante verificar se tudo está funcionando corretamente:
 
@@ -190,7 +190,7 @@ Após configurar o ambiente, é importante verificar se tudo está funcionando c
 
 Se você conseguir ver a mensagem "Hello, World!" no console, parabéns! Seu ambiente de desenvolvimento Java está configurado e pronto para uso.
 
-### 📝 Solucionando problemas comuns
+### Solucionando problemas comuns
 
 | Problema | Possível solução |
 |----------|-----------------|
@@ -202,6 +202,6 @@ Se você conseguir ver a mensagem "Hello, World!" no console, parabéns! Seu amb
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/>

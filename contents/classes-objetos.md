@@ -1,10 +1,10 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=180&section=header&text=Classes%20e%20Objetos&fontSize=30&fontColor=fff&animation=twinkling&fontAlignY=35"/>
 
-# 📝 Classes e Objetos
+# Classes e Objetos
 
 As classes e objetos são o coração da programação orientada a objetos em Java. Eles permitem representar elementos do mundo real em seu código de forma estruturada e organizada.
 
-## 🧊 Conceitos Básicos
+## Conceitos Básicos
 
 **Classe**: Um modelo ou blueprint que define as características e comportamentos que seus objetos terão.
 
@@ -12,7 +12,7 @@ As classes e objetos são o coração da programação orientada a objetos em Ja
 
 A relação é simples: **classes são modelos, objetos são instâncias desses modelos**.
 
-## 📋 Estrutura de uma Classe
+## Estrutura de uma Classe
 
 Uma classe em Java pode conter:
 
@@ -73,7 +73,7 @@ public class Carro {
 }
 ```
 
-## 🚀 Criando e Usando Objetos
+## Criando e Usando Objetos
 
 Para criar um objeto em Java, usamos o operador `new`:
 
@@ -89,7 +89,7 @@ meuCarro.frear(5);
 System.out.println("Meu carro é um " + meuCarro.getMarca() + " " + meuCarro.getModelo());
 ```
 
-## 📊 Tipos de Atributos e Métodos
+## Tipos de Atributos e Métodos
 
 ### Atributos de Instância vs Estáticos
 
@@ -105,7 +105,7 @@ System.out.println("Meu carro é um " + meuCarro.getMarca() + " " + meuCarro.get
 | **Métodos de instância** | Operam nos dados do objeto | `public void acelerar() {...}` |
 | **Métodos estáticos** | Não dependem de nenhum objeto específico | `public static double converterKmParaMilhas(double km) {...}` |
 
-## ⚙️ Construtores
+## Construtores
 
 Construtores são métodos especiais que são chamados quando um objeto é criado. Eles têm o mesmo nome da classe e não possuem tipo de retorno.
 
@@ -151,7 +151,7 @@ public class Produto {
 }
 ```
 
-## 🔄 Ciclo de Vida dos Objetos
+## Ciclo de Vida dos Objetos
 
 O ciclo de vida de um objeto em Java consiste em:
 
@@ -167,7 +167,7 @@ Java possui um coletor de lixo (garbage collector) que libera automaticamente a 
 System.gc(); // Apenas uma sugestão, não garante a execução imediata
 ```
 
-## 🔑 A Palavra-chave `this`
+## A Palavra-chave `this`
 
 `this` é uma referência ao objeto atual e pode ser usada para:
 
@@ -190,7 +190,7 @@ System.gc(); // Apenas uma sugestão, não garante a execução imediata
    outroObjeto.processar(this);
    ```
 
-## 📋 Boas Práticas
+## Boas Práticas
 
 1. **Encapsulamento**: Faça atributos privados e forneça métodos de acesso
 2. **Nomes descritivos**: Use nomes significativos para classes, atributos e métodos
@@ -200,6 +200,6 @@ System.gc(); // Apenas uma sugestão, não garante a execução imediata
 
 ---
 
-[📌 Voltar para o índice](../README.md)
+[Voltar para o índice](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/>

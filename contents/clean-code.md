@@ -1,4 +1,4 @@
-# ✨ Boas Práticas e Clean Code
+# Boas Práticas e Clean Code
 
 ## O que é Clean Code?
 
@@ -6,7 +6,7 @@ Clean Code (Código Limpo) refere-se a um conjunto de práticas que resultam em 
 
 ## Princípios Fundamentais
 
-### 1. 📌 Nomes Significativos
+### 1. Nomes Significativos
 
 ```java
 // Ruim
@@ -18,7 +18,7 @@ int diasDecorridos;
 List<String> listaDeClientes;
 ```
 
-### 2. 🔍 Funções Pequenas e Focadas
+### 2. Funções Pequenas e Focadas
 
 ```java
 // Ruim - função faz muitas coisas
@@ -39,17 +39,17 @@ public void processarDadosDoCliente(Cliente cliente) {
 }
 ```
 
-### 3. 🧩 Regra do Escoteiro
+### 3. Regra do Escoteiro
 
 Deixe o código mais limpo do que você o encontrou.
 
-### 4. 📏 Formatação Consistente
+### 4. Formatação Consistente
 
 * Use um estilo de codificação consistente
 * Mantenha um limite de colunas razoável (geralmente 80-120)
 * Alinhe código de forma coerente
 
-### 5. 📝 Comentários Apropriados
+### 5. Comentários Apropriados
 
 ```java
 // Ruim - comentário óbvio
@@ -63,7 +63,7 @@ contador++;
 
 ## Princípios SOLID
 
-### 1. 🔄 S - Princípio da Responsabilidade Única (SRP)
+### 1. S - Princípio da Responsabilidade Única (SRP)
 
 Uma classe deve ter apenas uma razão para mudar.
 
@@ -83,7 +83,7 @@ class ClienteValidator { /* validação */ }
 class ClienteReportGenerator { /* relatórios */ }
 ```
 
-### 2. 🔓 O - Princípio Aberto/Fechado (OCP)
+### 2. O - Princípio Aberto/Fechado (OCP)
 
 Entidades devem estar abertas para extensão, mas fechadas para modificação.
 
@@ -118,7 +118,7 @@ class DescontoVestuario implements EstrategiaDeDesconto {
 }
 ```
 
-### 3. 🔄 L - Princípio da Substituição de Liskov (LSP)
+### 3. L - Princípio da Substituição de Liskov (LSP)
 
 Subtipos devem ser substituíveis por seus tipos base.
 
@@ -156,7 +156,7 @@ class Quadrado extends Retangulo {
 }
 ```
 
-### 4. 🧩 I - Princípio da Segregação de Interface (ISP)
+### 4. I - Princípio da Segregação de Interface (ISP)
 
 Clientes não devem ser forçados a depender de interfaces que não utilizam.
 
@@ -190,7 +190,7 @@ class Robo implements Trabalhavel {
 }
 ```
 
-### 5. 🔄 D - Princípio da Inversão de Dependência (DIP)
+### 5. D - Princípio da Inversão de Dependência (DIP)
 
 Módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender de abstrações.
 
@@ -231,7 +231,7 @@ class ServicoEmail {
 
 ## Práticas Recomendadas para Java
 
-### 1. 🧹 Evite Números Mágicos
+### 1. Evite Números Mágicos
 
 ```java
 // Ruim
@@ -242,7 +242,7 @@ private static final int IDADE_MINIMA_MAIORIDADE = 18;
 if (idade > IDADE_MINIMA_MAIORIDADE) { ... }
 ```
 
-### 2. 🔄 Use Enums para Constantes Relacionadas
+### 2. Use Enums para Constantes Relacionadas
 
 ```java
 // Ruim
@@ -256,7 +256,7 @@ public enum StatusPedido {
 }
 ```
 
-### 3. 🧠 Falhe Rápido
+### 3. Falhe Rápido
 
 ```java
 public void processarPedido(Pedido pedido) {
@@ -273,7 +273,7 @@ public void processarPedido(Pedido pedido) {
 }
 ```
 
-### 4. 🛡️ Tratamento Adequado de Exceções
+### 4. Tratamento Adequado de Exceções
 
 ```java
 // Ruim
@@ -294,7 +294,7 @@ try {
 }
 ```
 
-### 5. 🧪 Código Testável
+### 5. Código Testável
 
 * Escreva código que seja fácil de testar
 * Use injeção de dependência
@@ -331,10 +331,10 @@ Lembre-se: código limpo é aquele que pode ser facilmente entendido por outro d
 
 ---
 
-## 📚 Recursos Adicionais
+## Recursos Adicionais
 
 * Livro: "Clean Code" de Robert C. Martin
 * Livro: "Refactoring" de Martin Fowler
 * Livro: "Effective Java" de Joshua Bloch
 * [Java Code Conventions (Oracle)](https://www.oracle.com/java/technologies/javase/codeconventions-introduction.html)
-* [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html) 
+* [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)

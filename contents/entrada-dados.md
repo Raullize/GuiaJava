@@ -1,16 +1,16 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=header"/>
 
-# ⌨️ Entrada de dados
+# Entrada de dados
 
-## 📥 Capturando informações do usuário em Java
+## Capturando informações do usuário em Java
 
 A interação com o usuário é fundamental para criar aplicações dinâmicas. Neste guia, exploraremos as diferentes formas de capturar dados de entrada em Java, desde o uso do console até interfaces gráficas.
 
-### 🖥️ Entrada pelo Console
+### Entrada pelo Console
 
 Java oferece várias maneiras de ler dados do console (linha de comando). Vamos explorar as principais:
 
-#### 📚 Usando a classe Scanner
+#### Usando a classe Scanner
 
 A classe `Scanner` é a forma mais comum e versátil de ler entrada de usuário em Java:
 
@@ -48,7 +48,7 @@ public class EntradaScanner {
 }
 ```
 
-##### 📋 Métodos principais do Scanner
+##### Métodos principais do Scanner
 
 | Método | Descrição | Exemplo |
 |--------|-----------|---------|
@@ -92,7 +92,7 @@ public class TratamentoErros {
 }
 ```
 
-#### 🔄 Usando BufferedReader
+#### Usando BufferedReader
 
 Para leitura mais eficiente de grandes volumes de dados, `BufferedReader` é uma alternativa:
 
@@ -140,7 +140,7 @@ public class EntradaBufferedReader {
 }
 ```
 
-#### 🧠 Scanner vs BufferedReader
+#### Scanner vs BufferedReader
 
 | Característica | Scanner | BufferedReader |
 |----------------|---------|----------------|
@@ -150,7 +150,7 @@ public class EntradaBufferedReader {
 | Sincronização | Não sincronizado | Sincronizado (thread-safe) |
 | Exceções | Checked e unchecked | Checked (IOException) |
 
-#### 🔙 Classe Console (menos comum)
+#### Classe Console (menos comum)
 
 Disponível desde Java 6, mas não funciona em todos os ambientes (como IDEs):
 
@@ -180,7 +180,7 @@ public class EntradaConsole {
 }
 ```
 
-### 📊 Argumentos de linha de comando
+### Argumentos de linha de comando
 
 Os argumentos passados ao executar o programa podem ser acessados através do parâmetro `args` do método `main`:
 
@@ -202,9 +202,9 @@ Para executar com argumentos:
 java ArgumentosComando arg1 arg2 "argumento com espaços"
 ```
 
-### 🧮 Leitura de arquivos
+### Leitura de arquivos
 
-#### 📄 Lendo arquivo de texto
+#### Lendo arquivo de texto
 
 ```java
 import java.io.BufferedReader;
@@ -231,7 +231,7 @@ public class LeituraArquivo {
 }
 ```
 
-#### 🧩 Lendo com Scanner a partir de arquivo
+#### Lendo com Scanner a partir de arquivo
 
 ```java
 import java.io.File;
@@ -259,7 +259,7 @@ public class LeituraArquivoScanner {
 }
 ```
 
-#### 📦 Lendo arquivo com Files (Java NIO)
+#### Lendo arquivo com Files (Java NIO)
 
 A partir do Java 7, a classe `Files` oferece métodos modernos para lidar com arquivos:
 
@@ -291,7 +291,7 @@ public class LeituraArquivoNIO {
 }
 ```
 
-### 🖼️ Entrada em interfaces gráficas (Swing)
+### Entrada em interfaces gráficas (Swing)
 
 Para aplicações desktop, a biblioteca Swing permite criar interfaces gráficas:
 
@@ -356,7 +356,7 @@ public class EntradaGrafica extends JFrame {
 }
 ```
 
-#### 📝 Caixas de diálogo
+#### Caixas de diálogo
 
 Para entrada simples, caixas de diálogo são mais rápidas de implementar:
 
@@ -390,7 +390,7 @@ public class EntradaDialog {
 }
 ```
 
-### 📱 Entrada em aplicações web
+### Entrada em aplicações web
 
 Em aplicações web Java (como Servlets, JSP, Spring), a entrada geralmente vem de formulários HTML:
 
@@ -425,7 +425,7 @@ public class ProcessarFormServlet extends HttpServlet {
 }
 ```
 
-### 🏆 Boas Práticas para Entrada de Dados
+### Boas Práticas para Entrada de Dados
 
 1. **Sempre valide as entradas**:
    - Verifique se a entrada está no formato esperado
@@ -450,7 +450,7 @@ public class ProcessarFormServlet extends HttpServlet {
    - Use formatos de número e data que podem ser localizados
    - Prepare mensagens para tradução
 
-### 📋 Resumo de opções de entrada
+### Resumo de opções de entrada
 
 | Método | Caso de uso ideal | Complexidade |
 |--------|-------------------|--------------|
@@ -464,6 +464,6 @@ public class ProcessarFormServlet extends HttpServlet {
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/>

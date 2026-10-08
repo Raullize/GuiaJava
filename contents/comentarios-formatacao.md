@@ -1,16 +1,16 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=header"/>
 
-# 📝 Comentários e formatação
+# Comentários e formatação
 
-## 💬 Documentando e organizando seu código Java
+## Documentando e organizando seu código Java
 
 A documentação e organização adequada do código são práticas essenciais para qualquer programador profissional. Neste guia, vamos explorar como usar comentários e formatação para tornar seu código Java mais legível e manutenível.
 
-### 💭 Comentários em Java
+### Comentários em Java
 
 Os comentários são trechos de texto que não são executados pelo compilador, servindo apenas para documentar o código. Java suporta três tipos de comentários:
 
-#### 📌 Comentários de linha única
+#### Comentários de linha única
 
 Começam com `//` e vão até o final da linha.
 
@@ -19,7 +19,7 @@ Começam com `//` e vão até o final da linha.
 int contador = 0; // Também pode ser colocado no final de uma linha de código
 ```
 
-#### 📑 Comentários de múltiplas linhas
+#### Comentários de múltiplas linhas
 
 Começam com `/*` e terminam com `*/`, podendo abranger várias linhas.
 
@@ -32,7 +32,7 @@ int x = 10; /* Este comentário também pode
               estar em múltiplas linhas */
 ```
 
-#### 📚 Comentários de documentação (Javadoc)
+#### Comentários de documentação (Javadoc)
 
 Começam com `/**` e terminam com `*/`. São usados para gerar documentação automática com a ferramenta Javadoc.
 
@@ -58,7 +58,7 @@ public class Contador {
 }
 ```
 
-### 🏷️ Tags Javadoc comuns
+### Tags Javadoc comuns
 
 | Tag | Descrição | Exemplo |
 |-----|-----------|---------|
@@ -71,13 +71,13 @@ public class Contador {
 | `@since` | Indica quando o elemento foi adicionado | `@since 1.2` |
 | `@deprecated` | Marca elemento como obsoleto | `@deprecated Use o método novo()` |
 
-### 📏 Boas práticas para comentários
+### Boas práticas para comentários
 
 1. **Comente o porquê, não o como**:
    ```java
    // RUIM: Incrementa contador em 1
    contador++;
-   
+  
    // BOM: Incrementa contador para cada novo usuário registrado
    contador++;
    ```
@@ -101,11 +101,11 @@ public class Contador {
 5. **Documente APIs públicas com Javadoc**:
    Métodos e classes que serão usados por outros desenvolvedores devem ter documentação Javadoc.
 
-### 🖌️ Formatação de código
+### Formatação de código
 
 A formatação consistente melhora a legibilidade do código. A maioria das convenções de formatação Java deriva do [Guia de Estilo da Oracle](https://www.oracle.com/java/technologies/javase/codeconventions-contents.html).
 
-#### 📐 Indentação
+#### Indentação
 
 Use 4 espaços para cada nível de indentação (ou tabulações configuradas para 4 espaços).
 
@@ -120,7 +120,7 @@ public class Exemplo {
 }
 ```
 
-#### 📏 Comprimento das linhas
+#### Comprimento das linhas
 
 Limite o comprimento das linhas a 80-120 caracteres, quebrando linhas longas de forma lógica.
 
@@ -136,7 +136,7 @@ if (condicao1 && condicao2
 }
 ```
 
-#### 🔠 Nomenclatura
+#### Nomenclatura
 
 Java usa convenções específicas de nomenclatura:
 
@@ -160,7 +160,7 @@ public class ContaBancaria {
 }
 ```
 
-#### 🧮 Espaçamento
+#### Espaçamento
 
 Use espaços para melhorar a legibilidade:
 
@@ -185,7 +185,7 @@ public void metodo() {
 }
 ```
 
-#### 🧱 Blocos
+#### Blocos
 
 Coloque chaves de abertura na mesma linha da declaração e as de fechamento alinhadas com a abertura do bloco:
 
@@ -205,7 +205,7 @@ class MinhaClasse {
 }
 ```
 
-### 🔄 Exemplo completo de código bem formatado e comentado
+### Exemplo completo de código bem formatado e comentado
 
 ```java
 package com.exemplo.util;
@@ -301,7 +301,7 @@ public class MatematicaUtil {
 }
 ```
 
-### 🛠️ Ferramentas para formatação automática
+### Ferramentas para formatação automática
 
 A formatação manual pode ser trabalhosa. Felizmente, existem ferramentas que podem ajudar:
 
@@ -316,12 +316,12 @@ A formatação manual pode ser trabalhosa. Felizmente, existem ferramentas que p
 3. **Checkstyle**: Ferramenta que valida se seu código segue convenções específicas.
    - [Checkstyle](https://checkstyle.sourceforge.io/)
 
-4. **Plugins de IDEs**: 
+4. **Plugins de IDEs**:
    - SonarLint
    - Checkstyle-IDEA (para IntelliJ)
    - SpotBugs
 
-### 📊 Benefícios de comentários e formatação adequados
+### Benefícios de comentários e formatação adequados
 
 1. **Manutenção facilitada**: Código bem documentado é mais fácil de manter
 2. **Colaboração eficiente**: Outros desenvolvedores entenderão seu código mais rapidamente
@@ -329,7 +329,7 @@ A formatação manual pode ser trabalhosa. Felizmente, existem ferramentas que p
 4. **Onboarding mais rápido**: Novos membros da equipe se adaptam mais facilmente
 5. **Qualidade percebida**: Código bem formatado transmite profissionalismo
 
-### 📋 Checklist para revisão de código
+### Checklist para revisão de código
 
 Antes de submeter seu código para revisão, verifique:
 
@@ -345,6 +345,6 @@ Antes de submeter seu código para revisão, verifique:
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/>

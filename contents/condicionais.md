@@ -1,12 +1,12 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=header"/>
 
-# 🔀 Estruturas Condicionais
+# Estruturas Condicionais
 
-## 🔄 Controlando o fluxo de execução em Java
+## Controlando o fluxo de execução em Java
 
 As estruturas condicionais são fundamentais em programação, pois permitem que um programa tome decisões e execute diferentes blocos de código com base em condições específicas. O Java oferece várias estruturas condicionais que ajudam a controlar o fluxo de execução do programa.
 
-### 📋 Tipos de Estruturas Condicionais em Java
+### Tipos de Estruturas Condicionais em Java
 
 Java oferece as seguintes estruturas condicionais:
 
@@ -16,7 +16,7 @@ Java oferece as seguintes estruturas condicionais:
 4. switch-case
 5. Operador ternário
 
-### ⚡ if
+### if
 
 A estrutura `if` é a mais básica e executa um bloco de código apenas se a condição especificada for verdadeira:
 
@@ -26,7 +26,7 @@ if (condição) {
 }
 ```
 
-#### 🔍 Exemplo:
+#### Exemplo:
 
 ```java
 public class ExemploIf {
@@ -40,7 +40,7 @@ public class ExemploIf {
 }
 ```
 
-### ⚡ if-else
+### if-else
 
 A estrutura `if-else` permite executar um bloco de código se a condição for verdadeira e outro bloco se for falsa:
 
@@ -52,7 +52,7 @@ if (condição) {
 }
 ```
 
-#### 🔍 Exemplo:
+#### Exemplo:
 
 ```java
 public class ExemploIfElse {
@@ -68,7 +68,7 @@ public class ExemploIfElse {
 }
 ```
 
-### ⚡ if-else if-else
+### if-else if-else
 
 A estrutura `if-else if-else` permite verificar múltiplas condições em sequência:
 
@@ -84,7 +84,7 @@ if (condição1) {
 }
 ```
 
-#### 🔍 Exemplo:
+#### Exemplo:
 
 ```java
 public class ExemploIfElseIf {
@@ -106,7 +106,7 @@ public class ExemploIfElseIf {
 }
 ```
 
-### ⚡ switch-case
+### switch-case
 
 A estrutura `switch-case` é útil quando precisamos comparar uma variável com múltiplos valores possíveis:
 
@@ -124,7 +124,7 @@ switch (expressão) {
 }
 ```
 
-#### 🔍 Exemplo:
+#### Exemplo:
 
 ```java
 public class ExemploSwitch {
@@ -193,7 +193,7 @@ public class SwitchSemBreak {
 }
 ```
 
-### 🔄 Switch Expressions (Java 12+)
+### Switch Expressions (Java 12+)
 
 A partir do Java 12, foram introduzidas melhorias no `switch` que permitem utilizá-lo como expressão e não apenas como declaração:
 
@@ -213,7 +213,7 @@ String nomeDoDia = switch (diaDaSemana) {
 
 Este formato é mais conciso e não precisa de `break`.
 
-#### ⚡ Múltiplos casos com o mesmo resultado:
+#### Múltiplos casos com o mesmo resultado:
 
 ```java
 // Java 12+
@@ -224,7 +224,7 @@ String tipoDeRota = switch (diaDaSemana) {
 };
 ```
 
-### 🔀 Operador Ternário
+### Operador Ternário
 
 O operador ternário é uma forma concisa de expressar uma condição simples:
 
@@ -232,7 +232,7 @@ O operador ternário é uma forma concisa de expressar uma condição simples:
 resultado = (condição) ? valorSeVerdadeiro : valorSeFalso;
 ```
 
-#### 🔍 Exemplo:
+#### Exemplo:
 
 ```java
 public class ExemploOperadorTernario {
@@ -245,7 +245,7 @@ public class ExemploOperadorTernario {
 }
 ```
 
-#### ⚡ Ternários aninhados:
+#### Ternários aninhados:
 
 Embora seja possível aninhar operadores ternários, isso pode comprometer a legibilidade:
 
@@ -264,7 +264,7 @@ public class TernarioAninhado {
 }
 ```
 
-### 🎯 Aplicações Práticas
+### Aplicações Práticas
 
 #### 1. Validação de Entrada de Usuário
 
@@ -358,7 +358,7 @@ public class CalculadoraDesconto {
 }
 ```
 
-### 🧐 Condições Complexas
+### Condições Complexas
 
 Em Java, podemos criar condições complexas usando operadores lógicos:
 
@@ -453,7 +453,7 @@ if (objeto.verificar() && objeto != null) {
 }
 ```
 
-### 🌟 Boas Práticas
+### Boas Práticas
 
 1. **Sempre use chaves**: Mesmo para blocos de uma única linha, para evitar erros quando adicionar mais linhas no futuro.
 
@@ -496,7 +496,7 @@ if (!condicaoC) return;
 
 5. **Cuidado com operador ternário**: Use apenas para casos simples e facilmente compreensíveis.
 
-### 📝 Resumo
+### Resumo
 
 | Estrutura | Uso | Quando usar |
 |-----------|-----|-------------|
@@ -508,6 +508,6 @@ if (!condicaoC) return;
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/>

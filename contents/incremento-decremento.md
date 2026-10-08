@@ -1,12 +1,12 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=header"/>
 
-# 🔄 Incremento e Decremento
+# Incremento e Decremento
 
-## 🔍 Entendendo os operadores `++` e `--` em Java
+## Entendendo os operadores `++` e `--` em Java
 
 Os operadores de incremento (`++`) e decremento (`--`) são utilizados para aumentar ou diminuir o valor de uma variável em uma unidade. Apesar de parecerem simples, estes operadores têm nuances importantes que todo programador Java deve compreender.
 
-### 📋 Tipos de Operadores de Incremento e Decremento
+### Tipos de Operadores de Incremento e Decremento
 
 Em Java, existem dois tipos de operadores de incremento e decremento:
 
@@ -59,22 +59,22 @@ System.out.println("a = " + a); // a = 4
 System.out.println("b = " + b); // b = 5
 ```
 
-### ⚙️ Funcionamento Detalhado
+### Funcionamento Detalhado
 
 Para entender ainda melhor o funcionamento desses operadores, vamos detalhar os passos que ocorrem em cada caso:
 
-#### 1️⃣ Pré-incremento (`++a`)
+#### 1 Pré-incremento (`++a`)
 
 1. Incrementa a variável `a` (a = a + 1)
 2. Retorna o valor já incrementado
 
-#### 2️⃣ Pós-incremento (`a++`)
+#### 2 Pós-incremento (`a++`)
 
 1. Lembra (armazena temporariamente) o valor atual de `a`
 2. Incrementa a variável `a` (a = a + 1)
 3. Retorna o valor armazenado no passo 1 (valor antes do incremento)
 
-### 🔍 Exemplos Práticos
+### Exemplos Práticos
 
 #### Exemplo 1: Uso simples
 
@@ -177,7 +177,7 @@ public class CasosComplexos {
 }
 ```
 
-### 🚫 Comportamento em Expressões Complexas
+### Comportamento em Expressões Complexas
 
 Quando múltiplos operadores de incremento ou decremento são usados na mesma expressão, o código pode se tornar confuso e o resultado pode variar, pois depende da ordem de avaliação definida pelo compilador Java.
 
@@ -217,7 +217,7 @@ if (x > 0 && array[i++] == 0) {
 }
 ```
 
-### 💼 Aplicações Práticas
+### Aplicações Práticas
 
 Os operadores de incremento e decremento são particularmente úteis em:
 
@@ -269,7 +269,7 @@ char atual = caracteres[indice++];
 char proximo = caracteres[++indice];
 ```
 
-### 🌟 Dicas e Boas Práticas
+### Dicas e Boas Práticas
 
 1. **Clareza**: Use os operadores de incremento/decremento de forma clara e isolada quando possível
 
@@ -277,7 +277,7 @@ char proximo = caracteres[++indice];
    // Preferido:
    contador++;
    resultado = contador;
-   
+  
    // Em vez de:
    resultado = contador++;
    ```
@@ -290,7 +290,7 @@ char proximo = caracteres[++indice];
 
 5. **Operações de retorno**: Use pré-incremento quando quiser o valor novo, e pós-incremento quando quiser o valor original
 
-### 📌 Resumo
+### Resumo
 
 | Operador | Nome | Comportamento | Exemplo |
 |----------|------|---------------|---------|
@@ -301,6 +301,6 @@ char proximo = caracteres[++indice];
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/>

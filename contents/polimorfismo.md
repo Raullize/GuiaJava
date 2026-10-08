@@ -1,17 +1,17 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=180&section=header&text=Polimorfismo&fontSize=30&fontColor=fff&animation=twinkling&fontAlignY=35"/>
 
-# 🔃 Polimorfismo
+# Polimorfismo
 
 O polimorfismo é um dos pilares da programação orientada a objetos que permite que objetos de diferentes classes sejam tratados como objetos de uma classe comum. A palavra "polimorfismo" vem do grego e significa "muitas formas".
 
-## 📌 O que é Polimorfismo?
+## O que é Polimorfismo?
 
 Polimorfismo é a capacidade de um objeto assumir "muitas formas" e se comportar de maneira diferente dependendo do contexto. Em Java, isso significa que:
 
 - Uma referência a uma superclasse pode apontar para um objeto de uma subclasse
 - Um método pode ter comportamentos diferentes dependendo do tipo real do objeto que o invoca
 
-## 🔄 Tipos de Polimorfismo em Java
+## Tipos de Polimorfismo em Java
 
 ### 1. Polimorfismo de Sobrecarga (Compile-time/Estático)
 
@@ -66,7 +66,7 @@ public class Gato extends Animal {
 
 Em tempo de execução, Java determina qual versão do método chamar com base no tipo real do objeto.
 
-## 💡 Utilizando Polimorfismo
+## Utilizando Polimorfismo
 
 ### Referência de Superclasse
 
@@ -116,7 +116,7 @@ vet.examinar(new Cachorro()); // Funciona para Cachorro
 vet.examinar(new Gato());     // Funciona para Gato
 ```
 
-## 🔍 Typecasting e Instanceof
+## Typecasting e Instanceof
 
 Quando trabalhamos com polimorfismo, às vezes precisamos acessar métodos específicos da subclasse:
 
@@ -161,7 +161,7 @@ if (animal instanceof Cachorro cachorro) {
 }
 ```
 
-## 🌟 Polimorfismo com Interfaces
+## Polimorfismo com Interfaces
 
 Interfaces são outra forma poderosa de implementar polimorfismo em Java:
 
@@ -198,7 +198,7 @@ fazerVoar(new Aviao());   // "Avião voando com motor"
 
 Este é um exemplo poderoso de polimorfismo, pois objetos de classes completamente diferentes podem ser tratados de forma uniforme.
 
-## 🧩 Benefícios do Polimorfismo
+## Benefícios do Polimorfismo
 
 1. **Flexibilidade**: Permite que sistemas facilmente acomodem novos tipos
 2. **Extensibilidade**: Facilita a adição de novas subclasses sem modificar código existente
@@ -206,14 +206,14 @@ Este é um exemplo poderoso de polimorfismo, pois objetos de classes completamen
 4. **Acoplamento reduzido**: Código cliente depende de abstrações, não de implementações específicas
 5. **Melhor manutenção**: Mudanças em subclasses não afetam interfaces comuns
 
-## 🚫 Limitações e Cuidados
+## Limitações e Cuidados
 
 1. **Complexidade**: Sistemas polimórficos podem ser mais difíceis de entender
 2. **Overhead**: Em alguns casos, chamadas de métodos polimórficos podem ser ligeiramente mais lentas
 3. **Erros de cast**: Typecasting incorreto pode causar `ClassCastException`
 4. **Comportamento inesperado**: Se mal implementado, pode levar a resultados surpresa
 
-## 💼 Boas Práticas
+## Boas Práticas
 
 1. **Princípio de Substituição de Liskov**: Subclasses devem poder ser usadas onde a superclasse é esperada sem alterar o comportamento esperado
 2. **Favoreça interfaces**: Use interfaces para definir contratos quando for apropriado
@@ -223,6 +223,6 @@ Este é um exemplo poderoso de polimorfismo, pois objetos de classes completamen
 
 ---
 
-[📌 Voltar para o índice](../README.md)
+[Voltar para o índice](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/>

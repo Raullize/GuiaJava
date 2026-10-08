@@ -1,10 +1,10 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=180&section=header&text=Encapsulamento&fontSize=30&fontColor=fff&animation=twinkling&fontAlignY=35"/>
 
-# 🔒 Encapsulamento
+# Encapsulamento
 
 O encapsulamento é um dos pilares da programação orientada a objetos, e refere-se ao agrupamento de dados e métodos que operam nesses dados em uma única unidade (classe), protegendo-os de acesso não autorizado e manipulação.
 
-## 📌 O que é Encapsulamento?
+## O que é Encapsulamento?
 
 Encapsulamento é a técnica que permite:
 - Ocultar detalhes de implementação interna de uma classe
@@ -12,7 +12,7 @@ Encapsulamento é a técnica que permite:
 - Expor apenas o necessário através de uma interface bem definida
 - Controlar como os dados são acessados e modificados
 
-## 🛡️ Por que Encapsular?
+## Por que Encapsular?
 
 | Benefício | Descrição |
 |-----------|-----------|
@@ -22,7 +22,7 @@ Encapsulamento é a técnica que permite:
 | **Validação** | Permite validar dados antes de modificá-los |
 | **Abstração** | Esconde a complexidade e expõe apenas o necessário |
 
-## 🔐 Implementando Encapsulamento em Java
+## Implementando Encapsulamento em Java
 
 ### Modificadores de Acesso
 
@@ -104,7 +104,7 @@ public class ContaBancaria {
 }
 ```
 
-## 💡 Getters e Setters
+## Getters e Setters
 
 Os métodos getters e setters são a interface pública para acessar e modificar atributos privados:
 
@@ -158,7 +158,7 @@ public class Pessoa {
 }
 ```
 
-## 🏆 Encapsulamento Avançado
+## Encapsulamento Avançado
 
 ### Classes Internas
 
@@ -211,7 +211,7 @@ public class Funcionario {
 }
 ```
 
-## 💼 Boas Práticas
+## Boas Práticas
 
 1. **Encapsule sempre**: Evite atributos públicos
 2. **Validação nos setters**: Sempre verifique dados antes de atribuí-los
@@ -222,6 +222,6 @@ public class Funcionario {
 
 ---
 
-[📌 Voltar para o índice](../README.md)
+[Voltar para o índice](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007396&height=120&section=footer"/>
